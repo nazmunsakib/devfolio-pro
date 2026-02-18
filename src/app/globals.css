@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #0b0f14;
+  --foreground: #e6edf3;
+  --primary: #04e8b9;
+  --secondary: #ec91ff;
+  --surface: #111827;
+  --surface-hover: #141c26;
+  --text-secondary: #9aa4b2;
+  --border-subtle: rgba(31, 41, 55, 0.5);
+}
+
+@layer base {
+  body {
+    background: var(--background);
+    color: var(--foreground);
+    @apply antialiased selection:bg-primary/30 selection:text-primary;
+  }
+}
+
+@layer utilities {
+  .bg-grid {
+    background-size: 40px 40px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  }
+
+  .glow-primary {
+    box-shadow: 0 0 30px rgba(4, 232, 185, 0.25);
+  }
+
+  .glow-secondary {
+    box-shadow: 0 0 30px rgba(236, 145, 255, 0.25);
+  }
+
+  .text-glow {
+    text-shadow: 0 0 15px rgba(4, 232, 185, 0.4);
+  }
+}
