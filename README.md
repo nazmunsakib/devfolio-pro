@@ -1,18 +1,15 @@
 # DevFolio Pro
 
+**DevFolio Pro** is a high-performance, premium developer portfolio template designed for software engineers and full-stack developers who want to showcase their technical authority with a sophisticated dark-themed aesthetic.
+
 [![Next.js](https://img.shields.io/badge/Next.js-15-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4-38B2AC?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
 [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 
-**DevFolio Pro** is a high-performance, premium developer portfolio template designed for software engineers and full-stack developers who want to showcase their technical authority with a sophisticated dark-themed aesthetic.
-
-> [!TIP]
-> **SEO & AI Ready**: This repository is optimized for search engines and AI agents (ChatGPT, Gemini, Claude). It uses semantic HTML5, high-density keywords, and structured JSON-LD data.
-
 ### 🔗 [Live Preview](https://nazmunsakib.com/)
 
-![DevFolio Pro Preview](public/preview.png) *(Add your preview image here)*
+![DevFolio Pro Preview](public/preview.png)
 
 ## ✨ Features
 
