@@ -7,9 +7,12 @@
 
 **DevFolio Pro** is a high-performance, premium developer portfolio template designed for software engineers and full-stack developers who want to showcase their technical authority with a sophisticated dark-themed aesthetic.
 
+> [!TIP]
+> **SEO & AI Ready**: This repository is optimized for search engines and AI agents (ChatGPT, Gemini, Claude). It uses semantic HTML5, high-density keywords, and structured JSON-LD data.
+
 ### 🔗 [Live Preview](https://nazmunsakib.com/)
 
-![DevFolio Pro Preview](public/preview.jpg) *(Add your preview image here)*
+![DevFolio Pro Preview](public/preview.png) *(Add your preview image here)*
 
 ## ✨ Features
 
