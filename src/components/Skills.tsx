@@ -46,7 +46,7 @@ const Skills = () => {
                             </h4>
                             <div className="space-y-4">
                                 {skillGroup.items.map((skill, idx) => (
-                                    <Card key={idx} className="p-4 flex items-center space-x-4 group">
+                                    <Card key={idx} className="p-[10px] flex items-center space-x-4 group">
                                         <div className="w-10 h-10 rounded-lg bg-[#0b0f14] flex items-center justify-center group-hover:scale-110 transition-transform">
                                             {renderIcon(skill.icon)}
                                         </div>

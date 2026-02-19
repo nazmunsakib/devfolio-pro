@@ -48,13 +48,13 @@ const Hero = () => {
                     <div className="hidden lg:flex justify-center relative">
                         <div className="relative w-[500px] h-[500px] flex items-center justify-center">
                             {/* Concentric Circles */}
-                            <div className="absolute w-[400px] h-[400px] rounded-full border border-primary/20 animate-[spin_20s_linear_infinite]" />
-                            <div className="absolute w-[300px] h-[300px] rounded-full border border-white/5 animate-[spin_15s_linear_infinite_reverse]" />
-                            <div className="absolute w-[200px] h-[200px] rounded-full border border-primary/10 animate-[spin_10s_linear_infinite]" />
+                            <div className="absolute w-[450px] h-[450px] rounded-full border-4 border-primary/20 animate-[spin_20s_linear_infinite]" />
+                            <div className="absolute w-[350px] h-[350px] rounded-full border-2 border-secondary/15 animate-[spin_15s_linear_infinite_reverse]" />
+                            <div className="absolute w-[250px] h-[250px] rounded-full border-2 border-primary/10 animate-[spin_10s_linear_infinite]" />
 
                             {/* Center Icon */}
                             <div className="relative z-10 w-32 h-32 rounded-full bg-surface-hover/80 border border-white/10 flex items-center justify-center backdrop-blur-xl shadow-[0_0_50px_rgba(4,232,185,0.1)]">
-                                <svg className="w-16 h-16 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <svg className="w-24 h-24 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
                                 </svg>
                             </div>

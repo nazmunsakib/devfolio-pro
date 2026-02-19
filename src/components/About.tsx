@@ -1,4 +1,4 @@
-import React from 'react';
+import Image from 'next/image';
 import { portfolioData } from '@/data/portfolio';
 
 const About = () => {
@@ -6,12 +6,17 @@ const About = () => {
         <section id="about" className="py-24 relative overflow-hidden">
             <div className="container mx-auto px-6">
                 <div className="flex flex-col lg:flex-row items-center gap-16">
-                    {/* Professional Photo Placeholder */}
+                    {/* Professional Photo */}
                     <div className="lg:w-1/2 relative group">
                         <div className="absolute -inset-4 bg-gradient-to-tr from-primary to-secondary opacity-20 blur-3xl rounded-full group-hover:opacity-30 transition-opacity duration-500" />
                         <div className="relative aspect-square max-w-md mx-auto overflow-hidden rounded-2xl border-2 border-border-subtle bg-surface">
-                            {/* Replace with real image in production */}
-                            <div className="w-full h-full bg-[url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1974&auto=format&fit=crop')] bg-cover bg-center grayscale opacity-80 group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" />
+                            <Image
+                                src="/images/nazmunsakib.jpg"
+                                alt="Nazmun Sakib"
+                                fill
+                                className="object-cover grayscale opacity-80 group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
+                                priority
+                            />
                         </div>
                         {/* Decorative Frame Element */}
                         <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-primary/10 rounded-xl -z-10 group-hover:-translate-x-2 group-hover:-translate-y-2 transition-transform" />
