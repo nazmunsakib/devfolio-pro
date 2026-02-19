@@ -21,7 +21,7 @@ const Contact = () => {
                                 Ready to elevate your <span className="text-secondary italic">Digital Presence?</span>
                             </h3>
                             <p className="text-text-secondary text-lg mb-12">
-                                I&apos;m currently available for freelance projects and full-time opportunities. Let&apos;s build something extraordinary together.
+                                I am available for WordPress plugin development, WooCommerce customization, AI automation, and full-stack projects worldwide. Let’s build a fast, scalable, and business-focused solution tailored to your needs.
                             </p>
 
                             <div className="space-y-6">
@@ -53,13 +53,13 @@ const Contact = () => {
                         <div className="p-8 md:p-16 bg-surface-hover/50 flex flex-col justify-center items-center text-center md:items-start md:text-left">
                             <p className="text-sm font-bold text-white uppercase tracking-widest mb-8">Follow My Work</p>
                             <div className="flex flex-wrap gap-5 mb-12">
-                                <a href="#" className="w-14 h-14 rounded-full bg-surface border border-border-subtle flex items-center justify-center hover:border-primary hover:text-primary hover:-translate-y-1 transition-all shadow-lg group">
+                                <a href="https://www.linkedin.com/in/nazmunsakib/" className="w-14 h-14 rounded-full bg-surface border border-border-subtle flex items-center justify-center hover:border-primary hover:text-primary hover:-translate-y-1 transition-all shadow-lg group">
                                     <Linkedin className="w-6 h-6 group-hover:drop-shadow-[0_0_8px_rgba(4,232,185,0.4)]" />
                                 </a>
-                                <a href="#" className="w-14 h-14 rounded-full bg-surface border border-border-subtle flex items-center justify-center hover:border-primary hover:text-primary hover:-translate-y-1 transition-all shadow-lg group">
+                                <a href="https://github.com/nazmunsakib" className="w-14 h-14 rounded-full bg-surface border border-border-subtle flex items-center justify-center hover:border-primary hover:text-primary hover:-translate-y-1 transition-all shadow-lg group">
                                     <Github className="w-6 h-6 group-hover:drop-shadow-[0_0_8px_rgba(4,232,185,0.4)]" />
                                 </a>
-                                <a href="#" className="w-14 h-14 rounded-full bg-surface border border-border-subtle flex items-center justify-center hover:border-primary hover:text-primary hover:-translate-y-1 transition-all shadow-lg group">
+                                <a href="https://www.instagram.com/sakib_aura/" className="w-14 h-14 rounded-full bg-surface border border-border-subtle flex items-center justify-center hover:border-primary hover:text-primary hover:-translate-y-1 transition-all shadow-lg group">
                                     <Instagram className="w-6 h-6 group-hover:drop-shadow-[0_0_8px_rgba(4,232,185,0.4)]" />
                                 </a>
                             </div>

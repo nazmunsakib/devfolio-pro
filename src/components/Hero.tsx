@@ -24,10 +24,24 @@ const Hero = () => {
                             {portfolioData.title}
                         </h2>
 
-                        <p className="text-base lg:text-lg text-text-secondary mb-10 leading-relaxed max-w-lg">
-                            I craft premium, scalable web solutions that convert visitors into customers.
-                            Specialized in building high-performance WordPress sites and custom web applications for international clients.
+                        <p className="text-base lg:text-lg text-text-secondary mb-8 leading-relaxed">
+                            {portfolioData.summary}
                         </p>
+
+                        <ul className="flex flex-wrap gap-6 mb-10">
+                            {['WordPress', 'WooCommerce', 'Laravel', 'Automation'].map((item) => (
+                                <li key={item} className="flex items-center space-x-3 group">
+                                    <div className="flex-shrink-0 w-6 h-6 rounded-full bg-secondary/10 flex items-center justify-center border border-secondary/20 group-hover:border-secondary/50 group-hover:bg-secondary/20 transition-all duration-300">
+                                        <svg className="w-3 h-3 text-secondary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
+                                        </svg>
+                                    </div>
+                                    <span className="font-semibold tracking-widest text-white/80 group-hover:text-secondary transition-colors duration-300">
+                                        {item}
+                                    </span>
+                                </li>
+                            ))}
+                        </ul>
 
                         <div className="flex flex-wrap gap-5">
                             <Button size="lg" variant="primary" className="group">
