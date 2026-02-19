@@ -160,10 +160,12 @@ export const portfolioData = {
     ],
     socials: {
         website: "https://nazmunsakib.com",
-        github: "https://github.com/nazmunsakib/devfolio-pro",
-        whatsapp: "https://wa.me/yourlink",
-        email: "sakib@example.com",
-        linkedin: "#",
-        twitter: "#"
+        github: "https://github.com/nazmunsakib/",
+        whatsapp: "https://wa.me/+8801792637781",
+        email: "nazmunsakib81@gmail.com",
+        linkedin: "https://www.linkedin.com/in/nazmunsakib/",
+        instagram: "https://www.instagram.com/sakib_aura/",
+        twitter: "https://x.com/nazmunsakib81",
+        wordpress: "https://profiles.wordpress.org/nazmunsakib/"
     }
 };
