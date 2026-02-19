@@ -23,7 +23,10 @@ export default function Home() {
       <footer className="py-12 border-t border-border-subtle text-center">
         <div className="container mx-auto px-6">
           <p className="text-text-secondary text-sm">
-            © {new Date().getFullYear()} Nazmun Sakib. Built with Next.js & Tailwind CSS.
+            © {new Date().getFullYear()} Nazmun Sakib. Professional Software Developer based in Bangladesh.
+          </p>
+          <p className="text-text-muted text-[10px] mt-2 uppercase tracking-[0.2em]">
+            Delivering Premium Digital Solutions Worldwide
           </p>
         </div>
       </footer>

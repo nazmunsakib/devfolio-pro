@@ -13,29 +13,36 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "DevFolio Pro | Premium Developer Portfolio Template",
-  description: "A high-performance, SEO-optimized Next.js & Tailwind CSS portfolio template for senior developers. Showcase your technical authority with DevFolio Pro.",
+  title: "Nazmun Sakib | Full Stack WordPress Developer & Software Architect",
+  description: "Senior WordPress Developer & AI Automation Expert based in Bangladesh. Specialized in custom WordPress plugins, WooCommerce backend engineering, and scalable Laravel web applications for global clients.",
   keywords: [
-    "Developer Portfolio Template",
-    "Next.js Portfolio",
-    "Tailwind CSS Portfolio",
-    "Senior Developer Portfolio",
-    "Open Source Portfolio Template",
-    "Premium Web Design",
-    "Full-Stack Developer Portfolio"
+    "Senior WordPress Developer",
+    "WordPress Developer Bangladesh",
+    "Custom WordPress Plugin Developer",
+    "WooCommerce Backend Engineer",
+    "Laravel Web Developer",
+    "AI Automation Consultant",
+    "Technical SEO Expert Bangladesh",
+    "Full-Stack Software Architect",
+    "Software Engineer Bangladesh",
+    "Expert PHP Developer"
   ],
   authors: [{ name: "Nazmun Sakib" }],
+  metadataBase: new URL("https://nazmunsakib.com"),
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
-    title: "DevFolio Pro | Premium Developer Portfolio Template",
-    description: "Launch your professional developer presence in minutes with this SEO-ready Next.js portfolio.",
+    title: "Nazmun Sakib | Senior WordPress Developer & Software Architect",
+    description: "Building high-performance WordPress plugins and scalable AI automation solutions for businesses worldwide.",
     url: "https://nazmunsakib.com",
-    siteName: "DevFolio Pro",
+    siteName: "Nazmun Sakib Portfolio",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "DevFolio Pro Preview",
+        alt: "Nazmun Sakib - Senior WordPress Developer",
       },
     ],
     locale: "en_US",
@@ -43,11 +50,13 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "DevFolio Pro | Next.js Portfolio Template",
-    description: "A high-performance portfolio template for modern software engineers.",
+    title: "Nazmun Sakib | WordPress Plugin Specialist & Software Architect",
+    description: "Expert in custom WordPress solutions, Laravel systems, and AI automation.",
     images: ["/og-image.jpg"],
   },
 };
+
+import StructuredData from "@/components/StructuredData";
 
 export default function RootLayout({
   children,
@@ -59,25 +68,7 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${spaceGrotesk.variable} antialiased bg-[#0b0f14] text-[#e6edf3] font-sans`}
       >
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "SoftwareSourceCode",
-              "name": "DevFolio Pro",
-              "description": "Premium developer portfolio template built with Next.js and Tailwind CSS.",
-              "codeRepository": "https://github.com/nazmunsakib/devfolio-pro",
-              "programmingLanguage": ["TypeScript", "React", "Next.js"],
-              "author": {
-                "@type": "Person",
-                "name": "Nazmun Sakib",
-                "url": "https://nazmunsakib.com"
-              },
-              "license": "https://opensource.org/licenses/MIT"
-            })
-          }}
-        />
+        <StructuredData />
         {children}
       </body>
     </html>
