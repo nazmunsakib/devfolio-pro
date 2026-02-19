@@ -16,20 +16,21 @@ const Hero = () => {
                             Welcome to my portfolio
                         </div>
 
-                        <h1 className="text-6xl lg:text-7xl font-heading font-bold mb-6 text-white tracking-tight">
-                            Nazmun <span className="text-primary italic">Sakib</span>
+                        <h1 className="mb-8">
+                            <span className="block text-6xl lg:text-7xl font-heading font-bold mb-6 text-white tracking-tight">
+                                Nazmun <span className="text-primary italic">Sakib</span>
+                            </span>
+                            <span className="block text-xl lg:text-3xl font-heading font-medium text-white/90 tracking-wide">
+                                {portfolioData.title}
+                            </span>
                         </h1>
-
-                        <h2 className="text-xl lg:text-3xl font-heading font-medium text-white/90 mb-8 tracking-wide">
-                            {portfolioData.title}
-                        </h2>
 
                         <p className="text-base lg:text-lg text-text-secondary mb-8 leading-relaxed">
                             {portfolioData.summary}
                         </p>
 
                         <ul className="flex flex-wrap gap-6 mb-10">
-                            {['WordPress', 'WooCommerce', 'Laravel', 'Automation'].map((item) => (
+                            {['WordPress', 'WooCommerce', 'Laravel', 'Ai Automation'].map((item) => (
                                 <li key={item} className="flex items-center space-x-3 group">
                                     <div className="flex-shrink-0 w-6 h-6 rounded-full bg-secondary/10 flex items-center justify-center border border-secondary/20 group-hover:border-secondary/50 group-hover:bg-secondary/20 transition-all duration-300">
                                         <svg className="w-3 h-3 text-secondary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
