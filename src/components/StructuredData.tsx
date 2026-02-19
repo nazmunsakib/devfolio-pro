@@ -11,8 +11,8 @@ const StructuredData = () => {
         "description": portfolioData.summary,
         "address": {
             "@type": "PostalAddress",
-            "addressLocality": "Bogura",
-            "addressRegion": "Rajshahi",
+            "addressLocality": "Cumilla",
+            "addressRegion": "Chittagong",
             "addressCountry": "Bangladesh"
         },
         "sameAs": [
@@ -82,14 +82,14 @@ const StructuredData = () => {
         "telephone": "+8801792637781",
         "address": {
             "@type": "PostalAddress",
-            "addressLocality": "Bogura",
-            "addressRegion": "Rajshahi",
+            "addressLocality": "Cumilla",
+            "addressRegion": "Chittagong",
             "addressCountry": "Bangladesh"
         },
         "geo": {
             "@type": "GeoCoordinates",
-            "latitude": 24.8481,
-            "longitude": 89.3730
+            "latitude": 23.4607,
+            "longitude": 91.1809
         },
         "priceRange": "$$",
         "openingHoursSpecification": {
