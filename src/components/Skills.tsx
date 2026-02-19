@@ -52,7 +52,7 @@ const Skills = () => {
         <section id="skills" className="py-24 bg-surface/30">
             <div className="container mx-auto px-6">
                 <div className="text-center mb-16">
-                    <h2 className="text-sm font-bold uppercase tracking-widest text-primary mb-4">Technical Expertise</h2>
+                    <h2 className="text-sm font-bold uppercase tracking-widest text-secondary mb-4">Technical Expertise</h2>
                     <h3 className="text-[32px] font-heading font-bold">Skills & Technologies</h3>
                 </div>
 

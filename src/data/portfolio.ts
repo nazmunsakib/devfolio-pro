@@ -86,7 +86,7 @@ export const portfolioData = {
     ],
     experience: [
         {
-            role: "Full-stack Developer",
+            role: "Full-stack Developer (Team Lead)",
             company: "Dynamic Web Lab",
             range: "2022 - Present",
             achievements: [
@@ -119,12 +119,12 @@ export const portfolioData = {
     projects: [
         {
             id: 1,
-            name: "Enterprise Dashboard Platform",
-            description: "A comprehensive analytics dashboard for enterprise clients with real-time data visualization, custom reporting, and team collaboration features.",
-            tech: ["React", "TypeScript", "Tailwind", "Node.js", "PostgreSQL"],
-            role: "Lead Developer",
+            name: "Docy - Documentation Theme",
+            description: "Docy is the perfect WordPress theme for creating comprehensive documentation, knowledge base, and LMS websites.",
+            tech: ["WordPress", "PHP", "jQuery", "LMS", "Elementor"],
+            role: "Developer",
             image: "/projects/dashboard.jpg",
-            link: "#",
+            link: "https://wordpress-theme.spider-themes.net/docy/",
             featured: true
         },
         {

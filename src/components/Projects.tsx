@@ -9,7 +9,7 @@ const Projects = () => {
             <div className="container mx-auto px-6">
                 <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-4">
                     <div>
-                        <h2 className="text-sm font-bold uppercase tracking-widest text-primary mb-4">Case Studies</h2>
+                        <h2 className="text-sm font-bold uppercase tracking-widest text-secondary mb-4">Case Studies</h2>
                         <h3 className="text-[32px] font-heading font-bold">Featured Projects</h3>
                     </div>
                     <p className="text-text-secondary max-w-md md:text-right">
@@ -21,9 +21,9 @@ const Projects = () => {
                     {portfolioData.projects.map((project) => (
                         <div key={project.id} className="group relative flex flex-col bg-[#111827] border border-border-subtle rounded-3xl overflow-hidden transition-all duration-500 hover:border-primary/30 hover:shadow-2xl">
                             {/* Image Container with Featured Badge */}
-                            <div className="relative aspect-[16/10] overflow-hidden bg-gradient-to-br from-gray-800 to-gray-900">
+                            <a href={project.link} target="_blank" rel="noopener noreferrer" className="relative block aspect-[16/10] overflow-hidden bg-gradient-to-br from-gray-800 to-gray-900 group/img">
                                 {/* Mockup Background Style */}
-                                <div className="absolute inset-0 flex items-center justify-center p-6 md:p-10">
+                                <div className="absolute inset-0 flex items-center justify-center p-6 md:p-10 transition-transform duration-500 group-hover/img:scale-105">
                                     <div className="w-full h-full bg-surface-hover rounded-xl border border-white/5 shadow-2xl overflow-hidden relative">
                                         {/* Browser Header Mock */}
                                         <div className="h-6 bg-white/5 border-b border-white/5 flex items-center px-3 gap-1.5">
@@ -47,7 +47,7 @@ const Projects = () => {
                                         </span>
                                     </div>
                                 )}
-                            </div>
+                            </a>
 
                             {/* Content */}
                             <div className="p-8 md:p-10 flex flex-col flex-grow">
@@ -63,12 +63,12 @@ const Projects = () => {
                                     {project.description}
                                 </p>
 
-                                <div className="mb-8 group/link">
+                                <a href={project.link} target="_blank" rel="noopener noreferrer" className="mb-8 group/link inline-block">
                                     <div className="inline-flex items-center text-sm font-bold uppercase tracking-[0.2em] text-white group-hover/link:text-primary transition-colors duration-300">
                                         <span>View Project</span>
                                         <ArrowUpRight className="w-4 h-4 ml-2 transform group-hover/link:translate-x-1 group-hover/link:-translate-y-1 transition-transform duration-300" />
                                     </div>
-                                </div>
+                                </a>
 
                                 <div className="flex flex-wrap gap-2.5 mt-auto">
                                     {project.tech.map((t) => (
@@ -79,8 +79,6 @@ const Projects = () => {
                                 </div>
                             </div>
 
-                            {/* Link logic if needed - currently interactive but staying on same card style */}
-                            <a href={project.link} className="absolute inset-0 z-10" />
                         </div>
                     ))}
                 </div>

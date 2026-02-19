@@ -25,7 +25,7 @@ const About = () => {
                     <div className="lg:w-1/2">
                         <h2 className="text-sm font-bold uppercase tracking-widest text-primary mb-4">About Me</h2>
                         <h3 className="text-[32px] font-heading font-bold mb-8 leading-tight">
-                            Crafting Digital Solutions with <span className="text-primary italic">Technical Precision.</span>
+                            Crafting Digital Solutions with <span className="text-secondary italic">Technical Precision.</span>
                         </h3>
 
                         <p className="text-lg text-text-secondary mb-8 leading-relaxed">

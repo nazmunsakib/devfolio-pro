@@ -13,7 +13,7 @@ const Hero = () => {
                 <div className="grid lg:grid-cols-2 gap-12 items-center">
                     <div className="max-w-2xl">
                         <div className="inline-flex items-center px-4 py-1.5 rounded-full bg-primary/5 text-primary text-[10px] font-bold uppercase tracking-[0.2em] mb-8 border border-primary/20 backdrop-blur-sm">
-                            Welcome to my portfolio
+                            Building Your Next Web Solution
                         </div>
 
                         <h1 className="mb-8">
