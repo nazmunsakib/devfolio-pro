@@ -18,17 +18,17 @@ export const portfolioData = {
         {
             title: "WordPress Plugin Development",
             description: "Custom, lightweight, and scalable plugins built with modern architecture and WordPress best practices.",
-            icon: "plugin"
+            icon: "wordpress"
         },
         {
             title: "WooCommerce Development",
             description: "Advanced WooCommerce backend solutions including custom checkout, automation, subscriptions, and performance optimization.",
-            icon: "shopping-cart"
+            icon: "woocommerce"
         },
         {
             title: "Laravel Web Applications",
             description: "Secure and scalable Laravel systems designed for SaaS platforms and complex business logic.",
-            icon: "code"
+            icon: "laravel"
         },
         {
             title: "Software Architecture",
@@ -38,7 +38,7 @@ export const portfolioData = {
         {
             title: "AI Automation Solutions",
             description: "Smart business automation using AI workflows to reduce manual work and improve operational efficiency.",
-            icon: "monitor"
+            icon: "bot"
         },
         {
             title: "Technical SEO & Performance",
@@ -50,37 +50,37 @@ export const portfolioData = {
         {
             category: "eCommerce",
             items: [
-                { name: "WooCommerce", icon: "server" },
-                { name: "Subscription Systems", icon: "database" },
-                { name: "POS Systems", icon: "hard-drive" },
-                { name: "Booking Systems", icon: "globe" }
+                { name: "WooCommerce", icon: "woocommerce" },
+                { name: "Subscription Systems", icon: "repeat" },
+                { name: "POS Systems", icon: "monitor" },
+                { name: "Booking Systems", icon: "calendar" }
             ]
         },
         {
             category: "Backend",
             items: [
-                { name: "WordPress Core", icon: "layout" },
-                { name: "PHP", icon: "plugin" },
-                { name: "MySQL", icon: "shopping-cart" },
-                { name: "Laravel", icon: "zap" }
+                { name: "WordPress Core", icon: "wordpress" },
+                { name: "PHP", icon: "php" },
+                { name: "MySQL", icon: "mysql" },
+                { name: "Laravel", icon: "laravel" }
             ]
         },
         {
             category: "Frontend",
             items: [
-                { name: "React / Next.js", icon: "code" },
-                { name: "TypeScript", icon: "file-code" },
-                { name: "Tailwind CSS", icon: "palette" },
-                { name: "JavaScript (ES6+)", icon: "terminal" }
+                { name: "React / Next.js", icon: "react" },
+                { name: "TypeScript", icon: "typescript" },
+                { name: "Tailwind CSS", icon: "tailwind" },
+                { name: "JavaScript (ES6+)", icon: "javascript" }
             ]
         },
         {
             category: "Automation",
             items: [
-                { name: "AI Automation", icon: "github" },
-                { name: "Workflow Automation", icon: "box" },
-                { name: "Webhooks", icon: "figma" },
-                { name: "API Integration", icon: "cloud" }
+                { name: "AI Automation", icon: "bot" },
+                { name: "Workflow Automation", icon: "workflow" },
+                { name: "Webhooks", icon: "webhook" },
+                { name: "API Integration", icon: "api" }
             ]
         }
     ],
