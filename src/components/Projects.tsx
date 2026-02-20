@@ -36,7 +36,7 @@ const Projects = () => {
                                                     alt={project.name}
                                                     fill
                                                     sizes="(max-width: 768px) 100vw, 50vw"
-                                                    className="object-cover object-top opacity-70 group-hover/img:opacity-100 transition-opacity duration-500"
+                                                    className="object-cover object-top opacity-65 group-hover/img:opacity-100 transition-opacity duration-500"
                                                 />
                                             </div>
                                         </div>
