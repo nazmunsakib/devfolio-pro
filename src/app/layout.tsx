@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import StructuredData from "@/components/StructuredData";
@@ -14,6 +14,11 @@ const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
   display: "swap",
 });
+
+export const viewport: Viewport = {
+  themeColor: "#0b0f14",
+  colorScheme: "dark",
+};
 
 export const metadata: Metadata = {
   title: {
@@ -51,11 +56,11 @@ export const metadata: Metadata = {
     siteName: "Nazmun Sakib Portfolio",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "/preview.png",
         width: 1200,
         height: 630,
         alt: "Nazmun Sakib - Senior WordPress Developer & Software Architect",
-        type: "image/jpeg",
+        type: "image/png",
       },
     ],
     locale: "en_US",
@@ -66,7 +71,7 @@ export const metadata: Metadata = {
     title: "Nazmun Sakib | WordPress Plugin Specialist & Software Architect",
     description:
       "Expert in custom WordPress plugins, WooCommerce backend engineering, Laravel systems, and AI automation.",
-    images: ["/og-image.jpg"],
+    images: ["/preview.png"],
     creator: "@nazmunsakib81",
     site: "@nazmunsakib81",
   },
@@ -82,6 +87,12 @@ export const metadata: Metadata = {
     },
   },
   category: "technology",
+  other: {
+    "geo.region": "BD-C",
+    "geo.placename": "Cumilla",
+    "geo.position": "23.4607;91.1809",
+    "ICBM": "23.4607, 91.1809",
+  },
 };
 
 export default function RootLayout({
@@ -94,8 +105,6 @@ export default function RootLayout({
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <meta name="theme-color" content="#0b0f14" />
-        <meta name="color-scheme" content="dark" />
       </head>
       <body
         className={`${inter.variable} ${spaceGrotesk.variable} antialiased bg-[#0b0f14] text-[#e6edf3] font-sans`}

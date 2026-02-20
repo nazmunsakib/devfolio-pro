@@ -65,7 +65,7 @@ const StructuredData = () => {
         "@type": "ProfessionalService",
         "@id": `${baseUrl}/#service`,
         "name": portfolioData.name,
-        "image": `${baseUrl}/og-image.jpg`,
+        "image": `${baseUrl}/preview.png`,
         "url": baseUrl,
         "telephone": "+8801792637781",
         "email": portfolioData.socials.email,
