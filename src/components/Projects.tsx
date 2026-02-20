@@ -1,6 +1,7 @@
 import React from 'react';
 import { portfolioData } from '@/data/portfolio';
 import Button from './ui/Button';
+import Image from 'next/image';
 import { Star, ArrowUpRight } from 'lucide-react';
 
 const Projects = () => {
@@ -23,17 +24,17 @@ const Projects = () => {
                             {/* Image Container with Featured Badge */}
                             <a href={project.link} target="_blank" rel="noopener noreferrer" className="relative block aspect-[16/10] overflow-hidden bg-gradient-to-br from-gray-800 to-gray-900 group/img">
                                 {/* Mockup Background Style */}
-                                <div className="absolute inset-0 flex items-center justify-center p-6 md:p-10 transition-transform duration-500 group-hover/img:scale-105">
+                                <div className="absolute inset-0 flex items-center justify-center p-4 md:p-6 transition-transform duration-500 group-hover/img:scale-105">
                                     <div className="w-full h-full bg-surface-hover rounded-xl border border-white/5 shadow-2xl overflow-hidden relative">
-                                        {/* Browser Header Mock */}
-                                        <div className="h-6 bg-white/5 border-b border-white/5 flex items-center px-3 gap-1.5">
-                                            <div className="w-1.5 h-1.5 rounded-full bg-red-400/50" />
-                                            <div className="w-1.5 h-1.5 rounded-full bg-yellow-400/50" />
-                                            <div className="w-1.5 h-1.5 rounded-full bg-green-400/50" />
-                                        </div>
                                         {/* Project Preview Content */}
-                                        <div className="flex items-center justify-center h-full bg-white/5 opacity-20">
-                                            <span className="text-6xl font-black">.com</span>
+                                        <div className="absolute inset-0 pt-6">
+                                            <Image
+                                                src={project.image}
+                                                alt={project.name}
+                                                fill
+                                                sizes="(max-width: 768px) 100vw, 50vw"
+                                                className="object-cover object-top opacity-70 group-hover/img:opacity-100 transition-opacity duration-500"
+                                            />
                                         </div>
                                     </div>
                                 </div>
@@ -50,20 +51,20 @@ const Projects = () => {
                             </a>
 
                             {/* Content */}
-                            <div className="p-8 md:p-10 flex flex-col flex-grow">
-                                <span className="text-xs font-bold text-primary uppercase tracking-[0.2em] mb-4">
+                            <div className="p-4 md:p-6 flex flex-col flex-grow">
+                                <span className="text-xs font-bold text-primary uppercase tracking-[0.2em] mb-2">
                                     {project.role}
                                 </span>
 
-                                <h4 className="text-2xl md:text-3xl font-heading font-bold mb-5 text-white group-hover:text-primary transition-colors">
+                                <h4 className="text-xl md:text-2xl font-heading font-bold mb-4 text-white group-hover:text-primary transition-colors">
                                     {project.name}
                                 </h4>
 
-                                <p className="text-text-secondary text-base leading-relaxed mb-6 line-clamp-2 md:line-clamp-none">
+                                <p className="text-text-secondary text-base leading-relaxed mb-4 line-clamp-2 md:line-clamp-none">
                                     {project.description}
                                 </p>
 
-                                <a href={project.link} target="_blank" rel="noopener noreferrer" className="mb-8 group/link inline-block">
+                                <a href={project.link} target="_blank" rel="noopener noreferrer" className="mb-5 group/link inline-block">
                                     <div className="inline-flex items-center text-sm font-bold uppercase tracking-[0.2em] text-white group-hover/link:text-primary transition-colors duration-300">
                                         <span>View Project</span>
                                         <ArrowUpRight className="w-4 h-4 ml-2 transform group-hover/link:translate-x-1 group-hover/link:-translate-y-1 transition-transform duration-300" />
