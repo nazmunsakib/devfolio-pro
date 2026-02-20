@@ -71,11 +71,18 @@ const Projects = () => {
                                     </div>
                                 </a>
 
-                                <div className="flex flex-wrap gap-2.5 mt-auto">
+                                <div className="flex flex-wrap gap-3 mt-auto">
                                     {project.tech.map((t) => (
-                                        <span key={t} className="text-[11px] font-semibold text-primary px-4 py-1.5 border border-primary/20 rounded-full bg-primary/5 hover:bg-primary/10 transition-colors">
-                                            {t}
-                                        </span>
+                                        <div key={t} className="flex items-center space-x-2 group/tag">
+                                            <div className="w-4 h-4 rounded-full bg-secondary/10 border border-secondary/30 flex items-center justify-center group-hover/tag:bg-secondary group-hover/tag:border-secondary transition-all">
+                                                <svg className="w-2.5 h-2.5 text-secondary group-hover/tag:text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={4} d="M5 12l5 5L20 7" />
+                                                </svg>
+                                            </div>
+                                            <span className="text-[11px] font-bold text-white/60 group-hover/tag:text-secondary uppercase tracking-wider transition-colors">
+                                                {t}
+                                            </span>
+                                        </div>
                                     ))}
                                 </div>
                             </div>

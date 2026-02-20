@@ -32,15 +32,17 @@ const About = () => {
                             {portfolioData.about.text}
                         </p>
 
-                        <div className="grid sm:grid-cols-2 gap-4">
+                        <div className="grid sm:grid-cols-2 gap-y-4 gap-x-6">
                             {portfolioData.about.highlights.map((highlight, index) => (
-                                <div key={index} className="flex items-center space-x-3">
-                                    <div className="flex-shrink-0 w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center border border-primary/20 mt-1">
-                                        <svg className="w-3 h-3 text-primary" fill="currentColor" viewBox="0 0 20 20">
-                                            <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" />
+                                <div key={index} className="flex items-center space-x-3 group/item">
+                                    <div className="flex-shrink-0 w-5 h-5 rounded-full bg-primary/10 border border-primary/30 flex items-center justify-center group-hover/item:bg-primary group-hover/item:border-primary transition-all duration-300">
+                                        <svg className="w-3.5 h-3.5 text-primary group-hover:text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={4} d="M5 12l5 5L20 7" />
                                         </svg>
                                     </div>
-                                    <span className="text-sm font-medium text-white/80">{highlight}</span>
+                                    <span className="text-sm font-semibold text-white/70 group-hover/item:text-primary transition-colors duration-300">
+                                        {highlight}
+                                    </span>
                                 </div>
                             ))}
                         </div>

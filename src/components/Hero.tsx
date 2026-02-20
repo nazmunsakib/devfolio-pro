@@ -31,13 +31,13 @@ const Hero = () => {
 
                         <ul className="flex flex-wrap gap-6 mb-10">
                             {['WordPress', 'WooCommerce', 'Laravel', 'Ai Automation'].map((item) => (
-                                <li key={item} className="flex items-center space-x-3 group">
-                                    <div className="flex-shrink-0 w-6 h-6 rounded-full bg-secondary/10 flex items-center justify-center border border-secondary/20 group-hover:border-secondary/50 group-hover:bg-secondary/20 transition-all duration-300">
-                                        <svg className="w-3 h-3 text-secondary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
+                                <li key={item} className="flex items-center space-x-3 group cursor-default">
+                                    <div className="flex-shrink-0 w-5 h-5 rounded-full bg-secondary/10 flex items-center justify-center border border-secondary/40 group-hover:bg-secondary group-hover:border-secondary transition-all duration-300 shadow-[0_0_10px_rgba(236,145,255,0.1)] group-hover:shadow-[0_0_15px_rgba(236,145,255,0.4)]">
+                                        <svg className="w-3.5 h-3.5 text-secondary group-hover:text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={4} d="M5 12l5 5L20 7" />
                                         </svg>
                                     </div>
-                                    <span className="tracking-widest text-white/80 group-hover:text-secondary transition-colors duration-300">
+                                    <span className="text-sm font-bold uppercase tracking-[0.1em] text-white/70 group-hover:text-secondary transition-colors duration-300">
                                         {item}
                                     </span>
                                 </li>
