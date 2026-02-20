@@ -27,6 +27,10 @@ export const metadata: Metadata = {
   },
   description:
     "Senior WordPress Plugin Developer & AI Automation Expert based in Bangladesh. 5+ years building custom WordPress plugins, WooCommerce backends, and scalable Laravel web applications for global clients.",
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+  },
   keywords: [
     "Remote WordPress Developer",
     "Freelance WooCommerce Expert",
