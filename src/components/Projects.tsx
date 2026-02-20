@@ -2,7 +2,7 @@ import React from 'react';
 import { portfolioData } from '@/data/portfolio';
 import Button from './ui/Button';
 import Image from 'next/image';
-import { Star, ArrowUpRight } from 'lucide-react';
+import { Star, ArrowUpRight, Lock } from 'lucide-react';
 
 const Projects = () => {
     return (
@@ -22,7 +22,7 @@ const Projects = () => {
                     {portfolioData.projects.map((project) => (
                         <div key={project.id} className="group relative flex flex-col bg-[#111827] border border-border-subtle rounded-3xl overflow-hidden transition-all duration-500 hover:border-primary/30 hover:shadow-2xl">
                             {/* Image Container with Featured Badge */}
-                            <a href={project.link} target="_blank" rel="noopener noreferrer" className="relative block aspect-[16/10] overflow-hidden bg-gradient-to-br from-gray-800 to-gray-900 group/img">
+                            <a href={project.link} target="_blank" rel={`noopener noreferrer ${(project as any).nofollow ? 'nofollow' : ''}`.trim()} className="relative block aspect-[16/10] overflow-hidden bg-gradient-to-br from-gray-800 to-gray-900 group/img">
                                 {/* Mockup Background Style */}
                                 <div className="absolute inset-0 flex items-center justify-center p-4 md:p-6 transition-transform duration-500 group-hover/img:scale-105">
                                     <div className="w-full h-full bg-surface-hover rounded-xl border border-white/5 shadow-2xl overflow-hidden relative">
@@ -64,7 +64,7 @@ const Projects = () => {
                                     {project.description}
                                 </p>
 
-                                <a href={project.link} target="_blank" rel="noopener noreferrer" className="mb-5 group/link inline-block">
+                                <a href={project.link} target="_blank" rel={`noopener noreferrer ${(project as any).nofollow ? 'nofollow' : ''}`.trim()} className="mb-5 group/link inline-block">
                                     <div className="inline-flex items-center text-sm font-bold uppercase tracking-[0.2em] text-white group-hover/link:text-primary transition-colors duration-300">
                                         <span>View Project</span>
                                         <ArrowUpRight className="w-4 h-4 ml-2 transform group-hover/link:translate-x-1 group-hover/link:-translate-y-1 transition-transform duration-300" />
@@ -91,8 +91,19 @@ const Projects = () => {
                     ))}
                 </div>
 
-                <div className="text-center mt-20">
-                    <Button variant="outline" size="lg">Review All Work</Button>
+                {/* NDA Notice */}
+                <div className="mt-16 max-w-3xl mx-auto">
+                    <div className="bg-primary/5 border border-primary/20 rounded-2xl p-6 md:p-8 flex flex-col md:flex-row items-center gap-6 backdrop-blur-sm">
+                        <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                            <Lock className="w-6 h-6 text-primary" />
+                        </div>
+                        <div className="flex-grow text-center md:text-left">
+                            <h4 className="text-white font-bold mb-2">Notice Regarding NDA Projects</h4>
+                            <p className="text-text-secondary text-sm leading-relaxed">
+                                I have developed many interesting and complex projects that I cannot display publicly due to Non-Disclosure Agreements (NDA). If you are interested in seeing more examples of my technical capabilities, please <a href="#contact" className="text-primary hover:underline font-bold">contact me</a> and I can share relevant details privately.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

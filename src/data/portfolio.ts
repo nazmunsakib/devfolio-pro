@@ -125,7 +125,8 @@ export const portfolioData = {
             role: "Developer",
             image: "/images/projects/docy-theme.png",
             link: "https://wordpress-theme.spider-themes.net/docy/",
-            featured: true
+            featured: false,
+            nofollow: true
         },
         {
             id: 2,
@@ -135,7 +136,8 @@ export const portfolioData = {
             role: "Full-Stack Developer",
             image: "/images/projects/francescasplace.png",
             link: "https://www.francescasplace.co.uk/",
-            featured: true
+            featured: false,
+            nofollow: true
         },
         {
             id: 3,
@@ -145,7 +147,8 @@ export const portfolioData = {
             role: "Lead Frontend Engineer",
             image: "/images/projects/buyorsell24.png",
             link: "https://buyorsell24.com/",
-            featured: true
+            featured: false,
+            nofollow: true
         },
         {
             id: 4,
@@ -155,7 +158,8 @@ export const portfolioData = {
             role: "Backend Architect",
             image: "/images/projects/nivosearch.png",
             link: "https://wordpress.org/plugins/nivo-ajax-search-for-woocommerce/",
-            featured: true
+            featured: false,
+            nofollow: false
         }
     ],
     socials: {
