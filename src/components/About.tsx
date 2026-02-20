@@ -3,13 +3,13 @@ import { portfolioData } from '@/data/portfolio';
 
 const About = () => {
     return (
-        <section id="about" className="py-24 relative overflow-hidden">
+        <section id="about" className="py-16 lg:py-24 relative overflow-hidden">
             <div className="container mx-auto px-6">
-                <div className="flex flex-col lg:flex-row items-center gap-16">
+                <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
                     {/* Professional Photo */}
-                    <div className="lg:w-1/2 relative group">
+                    <div className="w-full lg:w-1/2 relative group flex-shrink-0">
                         <div className="absolute -inset-4 bg-gradient-to-tr from-primary to-secondary opacity-20 blur-3xl rounded-full group-hover:opacity-30 transition-opacity duration-500" />
-                        <div className="relative aspect-square max-w-md mx-auto overflow-hidden rounded-2xl border-2 border-border-subtle bg-surface">
+                        <div className="relative aspect-square max-w-[260px] sm:max-w-xs lg:max-w-md mx-auto overflow-hidden rounded-2xl border-2 border-border-subtle bg-surface shadow-2xl">
                             <Image
                                 src="/images/nazmunsakib.jpg"
                                 alt="Nazmun Sakib"
@@ -19,20 +19,20 @@ const About = () => {
                             />
                         </div>
                         {/* Decorative Frame Element */}
-                        <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-primary/10 rounded-xl -z-10 group-hover:-translate-x-2 group-hover:-translate-y-2 transition-transform" />
+                        <div className="absolute -bottom-4 -right-4 lg:-bottom-6 lg:-right-6 w-20 h-20 lg:w-32 lg:h-32 bg-primary/10 rounded-xl -z-10 group-hover:-translate-x-2 group-hover:-translate-y-2 transition-transform" />
                     </div>
 
-                    <div className="lg:w-1/2">
+                    <div className="lg:w-1/2 text-center lg:text-left">
                         <h2 className="text-sm font-bold uppercase tracking-widest text-primary mb-4">About Me</h2>
-                        <h3 className="text-[32px] font-heading font-bold mb-8 leading-tight">
+                        <h3 className="text-2xl lg:text-[32px] font-heading font-bold mb-6 lg:mb-8 leading-tight">
                             Crafting Digital Solutions with <span className="text-secondary italic">Technical Precision.</span>
                         </h3>
 
-                        <p className="text-lg text-text-secondary mb-8 leading-relaxed">
+                        <p className="text-base lg:text-lg text-text-secondary mb-8 leading-relaxed">
                             {portfolioData.about.text}
                         </p>
 
-                        <div className="grid sm:grid-cols-2 gap-y-4 gap-x-6">
+                        <div className="grid grid-cols-2 gap-y-4 gap-x-6 text-left">
                             {portfolioData.about.highlights.map((highlight, index) => (
                                 <div key={index} className="flex items-center space-x-3 group/item">
                                     <div className="flex-shrink-0 w-5 h-5 rounded-full bg-primary/10 border border-primary/30 flex items-center justify-center group-hover/item:bg-primary group-hover/item:border-primary transition-all duration-300">

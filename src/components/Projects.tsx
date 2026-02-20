@@ -6,7 +6,7 @@ import { Star, ArrowUpRight, Lock } from 'lucide-react';
 
 const Projects = () => {
     return (
-        <section id="projects" className="py-24 bg-surface/20">
+        <section id="projects" className="py-16 lg:py-24 bg-surface/20">
             <div className="container mx-auto px-6">
                 <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-4">
                     <div>

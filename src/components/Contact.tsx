@@ -5,7 +5,7 @@ import { Linkedin, Github, Instagram, Mail } from 'lucide-react';
 
 const Contact = () => {
     return (
-        <section id="contact" className="py-24 relative overflow-hidden">
+        <section id="contact" className="py-16 lg:py-24 relative overflow-hidden">
             {/* Background decoration */}
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-secondary/5 blur-[120px] rounded-full -z-10" />
 

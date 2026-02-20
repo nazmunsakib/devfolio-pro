@@ -36,7 +36,7 @@ const Services = () => {
     };
 
     return (
-        <section id="services" className="py-24 relative overflow-hidden">
+        <section id="services" className="py-16 lg:py-24 relative overflow-hidden">
             {/* Background Accents */}
             <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-secondary/5 rounded-full blur-[100px] -z-10" />
 

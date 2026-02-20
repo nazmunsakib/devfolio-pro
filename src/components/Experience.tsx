@@ -3,7 +3,7 @@ import { portfolioData } from '@/data/portfolio';
 
 const Experience = () => {
     return (
-        <section id="experience" className="py-24">
+        <section id="experience" className="py-16 lg:py-24">
             <div className="container mx-auto px-6">
                 <div className="text-center mb-16">
                     <h2 className="text-sm font-bold uppercase tracking-widest text-secondary mb-4">Professional Journey</h2>
