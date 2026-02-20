@@ -4,32 +4,32 @@ import { portfolioData } from '@/data/portfolio';
 
 const Hero = () => {
     return (
-        <section className="relative min-h-[90vh] flex items-center pt-20 overflow-hidden bg-grid">
+        <section className="relative min-h-[90vh] flex items-center pt-10 lg:pt-20 overflow-hidden bg-grid">
             {/* Background Glows */}
             <div className="absolute top-1/2 left-0 -translate-y-1/2 w-[600px] h-[600px] bg-primary/10 rounded-full blur-[120px] -z-10" />
             <div className="absolute top-1/2 right-0 -translate-y-1/2 w-[600px] h-[600px] bg-secondary/10 rounded-full blur-[120px] -z-10" />
 
             <div className="container mx-auto px-6 relative z-10">
                 <div className="grid lg:grid-cols-2 gap-12 items-center">
-                    <div className="max-w-2xl">
+                    <div className="max-w-2xl text-center lg:text-left">
                         <div className="inline-flex items-center px-4 py-1.5 rounded-full bg-primary/5 text-primary text-[10px] font-bold uppercase tracking-[0.2em] mb-8 border border-primary/20 backdrop-blur-sm">
                             Building Your Next Web Solution
                         </div>
 
                         <h1 className="mb-8">
-                            <span className="block text-6xl lg:text-7xl font-heading font-bold mb-6 text-white tracking-tight">
+                            <span className="block text-5xl md:text-6xl lg:text-7xl font-heading font-bold mb-4 lg:mb-6 text-white tracking-tight leading-tight">
                                 Nazmun <span className="text-primary italic">Sakib</span>
                             </span>
-                            <span className="block text-xl lg:text-3xl font-heading font-medium text-white/90 tracking-wide">
+                            <span className="block text-lg lg:text-3xl font-heading font-medium text-white/90 tracking-wide">
                                 {portfolioData.title}
                             </span>
                         </h1>
 
-                        <p className="text-base lg:text-lg text-text-secondary mb-8 leading-relaxed">
+                        <p className="text-sm lg:text-lg text-text-secondary mb-8 leading-relaxed max-w-lg mx-auto lg:mx-0">
                             {portfolioData.summary}
                         </p>
 
-                        <ul className="flex flex-wrap gap-6 mb-10">
+                        <ul className="flex flex-wrap justify-center lg:justify-start gap-4 sm:gap-6 mb-10">
                             {['WordPress', 'WooCommerce', 'Laravel', 'Ai Automation'].map((item) => (
                                 <li key={item} className="flex items-center space-x-3 group cursor-default">
                                     <div className="flex-shrink-0 w-5 h-5 rounded-full bg-secondary/10 flex items-center justify-center border border-secondary/40 group-hover:bg-secondary group-hover:border-secondary transition-all duration-300 shadow-[0_0_10px_rgba(236,145,255,0.1)] group-hover:shadow-[0_0_15px_rgba(236,145,255,0.4)]">
@@ -37,21 +37,21 @@ const Hero = () => {
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={4} d="M5 12l5 5L20 7" />
                                         </svg>
                                     </div>
-                                    <span className="text-sm font-bold uppercase tracking-[0.1em] text-white/70 group-hover:text-secondary transition-colors duration-300">
+                                    <span className="text-[10px] sm:text-sm font-bold uppercase tracking-[0.1em] text-white/70 group-hover:text-secondary transition-colors duration-300">
                                         {item}
                                     </span>
                                 </li>
                             ))}
                         </ul>
 
-                        <div className="flex flex-wrap gap-5">
-                            <Button size="lg" variant="primary" className="group">
+                        <div className="flex flex-wrap justify-center lg:justify-start gap-4 sm:gap-5">
+                            <Button size="lg" variant="primary" className="group px-6 sm:px-8">
                                 <span>Let&apos;s Work Together</span>
                                 <svg className="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                                 </svg>
                             </Button>
-                            <Button size="lg" variant="outline" className="group">
+                            <Button size="lg" variant="outline" className="group px-6 sm:px-8">
                                 <span>Download CV</span>
                                 <svg className="w-4 h-4 ml-2 transform group-hover:translate-y-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
