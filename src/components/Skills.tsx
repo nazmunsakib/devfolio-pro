@@ -2,6 +2,7 @@ import React from 'react';
 import Card from './ui/Card';
 import { portfolioData } from '@/data/portfolio';
 import * as LucideIcons from 'lucide-react';
+import AnimateOnScroll from './AnimateOnScroll';
 
 const Skills = () => {
     // Helper to render icon safely
@@ -51,32 +52,34 @@ const Skills = () => {
     return (
         <section id="skills" className="py-16 lg:py-24 bg-surface/30">
             <div className="container mx-auto px-6">
-                <div className="text-center mb-16">
+                <AnimateOnScroll animation="fade-up" className="text-center mb-16">
                     <h2 className="text-sm font-bold uppercase tracking-widest text-secondary mb-4">Technical Expertise</h2>
-                    <h3 className="text-[32px] font-heading font-bold">Skills & Technologies</h3>
-                </div>
+                    <h3 className="text-[32px] font-heading font-bold">Skills &amp; Technologies</h3>
+                </AnimateOnScroll>
 
                 <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
                     {portfolioData.skills.map((skillGroup, groupIdx) => (
-                        <div key={groupIdx} className="space-y-6">
-                            <h4 className="text-xl font-heading font-semibold px-2 border-l-2 border-primary/50 text-white/90">
-                                {skillGroup.category}
-                            </h4>
-                            <div className="space-y-4">
-                                {skillGroup.items.map((skill, idx) => (
-                                    <Card key={idx} className="p-[10px] flex items-center space-x-4 group">
-                                        <div className="w-10 h-10 rounded-lg bg-[#0b0f14] flex items-center justify-center group-hover:scale-110 transition-transform">
-                                            {renderIcon(skill.icon)}
-                                        </div>
-                                        <div>
-                                            <h5 className="font-medium text-sm text-white/90 group-hover:text-primary transition-colors">
-                                                {skill.name}
-                                            </h5>
-                                        </div>
-                                    </Card>
-                                ))}
+                        <AnimateOnScroll key={groupIdx} animation="fade-up" delay={groupIdx * 100}>
+                            <div className="space-y-6">
+                                <h4 className="text-xl font-heading font-semibold px-2 border-l-2 border-primary/50 text-white/90">
+                                    {skillGroup.category}
+                                </h4>
+                                <div className="space-y-4">
+                                    {skillGroup.items.map((skill, idx) => (
+                                        <Card key={idx} className="p-[10px] flex items-center space-x-4 group">
+                                            <div className="w-10 h-10 rounded-lg bg-[#0b0f14] flex items-center justify-center group-hover:scale-110 transition-transform">
+                                                {renderIcon(skill.icon)}
+                                            </div>
+                                            <div>
+                                                <h5 className="font-medium text-sm text-white/90 group-hover:text-primary transition-colors">
+                                                    {skill.name}
+                                                </h5>
+                                            </div>
+                                        </Card>
+                                    ))}
+                                </div>
                             </div>
-                        </div>
+                        </AnimateOnScroll>
                     ))}
                 </div>
             </div>

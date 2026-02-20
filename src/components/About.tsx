@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import { portfolioData } from '@/data/portfolio';
+import AnimateOnScroll from './AnimateOnScroll';
 
 const About = () => {
     return (
@@ -7,7 +8,7 @@ const About = () => {
             <div className="container mx-auto px-6">
                 <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
                     {/* Professional Photo */}
-                    <div className="w-full lg:w-1/2 relative group flex-shrink-0">
+                    <AnimateOnScroll animation="slide-left" className="w-full lg:w-1/2 relative group flex-shrink-0">
                         <div className="absolute -inset-4 bg-gradient-to-tr from-primary to-secondary opacity-20 blur-3xl rounded-full group-hover:opacity-30 transition-opacity duration-500" />
                         <div className="relative aspect-square max-w-[260px] sm:max-w-xs lg:max-w-md mx-auto overflow-hidden rounded-2xl border-2 border-border-subtle bg-surface shadow-2xl">
                             <Image
@@ -20,9 +21,9 @@ const About = () => {
                         </div>
                         {/* Decorative Frame Element */}
                         <div className="absolute -bottom-4 -right-4 lg:-bottom-6 lg:-right-6 w-20 h-20 lg:w-32 lg:h-32 bg-primary/10 rounded-xl -z-10 group-hover:-translate-x-2 group-hover:-translate-y-2 transition-transform" />
-                    </div>
+                    </AnimateOnScroll>
 
-                    <div className="lg:w-1/2 text-center lg:text-left">
+                    <AnimateOnScroll animation="slide-right" delay={150} className="lg:w-1/2 text-center lg:text-left">
                         <h2 className="text-sm font-bold uppercase tracking-widest text-primary mb-4">About Me</h2>
                         <h3 className="text-2xl lg:text-[32px] font-heading font-bold mb-6 lg:mb-8 leading-tight">
                             Crafting Digital Solutions with <span className="text-secondary italic">Technical Precision.</span>
@@ -46,7 +47,7 @@ const About = () => {
                                 </div>
                             ))}
                         </div>
-                    </div>
+                    </AnimateOnScroll>
                 </div>
             </div>
         </section>

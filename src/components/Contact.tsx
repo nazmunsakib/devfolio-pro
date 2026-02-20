@@ -2,6 +2,7 @@ import React from 'react';
 import Button from './ui/Button';
 import { portfolioData } from '@/data/portfolio';
 import { Linkedin, Github, Instagram, Mail } from 'lucide-react';
+import AnimateOnScroll from './AnimateOnScroll';
 
 const Contact = () => {
     return (
@@ -15,7 +16,7 @@ const Contact = () => {
 
                     <div className="grid md:grid-cols-2">
                         {/* Left side: Info */}
-                        <div className="p-8 md:p-16 border-b md:border-b-0 md:border-r border-border-subtle">
+                        <AnimateOnScroll animation="slide-left" className="p-8 md:p-16 border-b md:border-b-0 md:border-r border-border-subtle">
                             <h2 className="text-sm font-bold uppercase tracking-widest text-primary mb-6">Let&apos;s Connect</h2>
                             <h3 className="text-[32px] font-heading font-bold mb-8 leading-tight text-white">
                                 Ready to elevate your <span className="text-secondary italic">Digital Presence?</span>
@@ -47,10 +48,10 @@ const Contact = () => {
                                     </div>
                                 </a>
                             </div>
-                        </div>
+                        </AnimateOnScroll>
 
                         {/* Right side: Socials/CTA */}
-                        <div className="p-8 md:p-16 bg-surface-hover/50 flex flex-col justify-center items-center text-center md:items-start md:text-left">
+                        <AnimateOnScroll animation="slide-right" delay={150} className="p-8 md:p-16 bg-surface-hover/50 flex flex-col justify-center items-center text-center md:items-start md:text-left">
                             <p className="text-sm font-bold text-white uppercase tracking-widest mb-8">Follow My Work</p>
                             <div className="flex flex-nowrap md:flex-wrap gap-3 sm:gap-5 mb-12 overflow-x-auto pb-4 max-w-full no-scrollbar">
                                 <a href={portfolioData.socials.linkedin} className="flex-shrink-0 w-12 h-12 md:w-14 md:h-14 rounded-full bg-surface border border-border-subtle flex items-center justify-center hover:border-primary hover:text-primary hover:-translate-y-1 transition-all shadow-lg group">
@@ -80,7 +81,7 @@ const Contact = () => {
                                 </a>
                             </div>
                             <Button size="lg" className="w-full md:w-auto">Download Resume</Button>
-                        </div>
+                        </AnimateOnScroll>
                     </div>
                 </div>
             </div>

@@ -1,18 +1,24 @@
 import React from 'react';
 import { portfolioData } from '@/data/portfolio';
+import AnimateOnScroll from './AnimateOnScroll';
 
 const Experience = () => {
     return (
         <section id="experience" className="py-16 lg:py-24">
             <div className="container mx-auto px-6">
-                <div className="text-center mb-16">
+                <AnimateOnScroll animation="fade-up" className="text-center mb-16">
                     <h2 className="text-sm font-bold uppercase tracking-widest text-secondary mb-4">Professional Journey</h2>
                     <h3 className="text-[32px] font-heading font-bold">Work Experience</h3>
-                </div>
+                </AnimateOnScroll>
 
                 <div className="max-w-4xl mx-auto space-y-12">
                     {portfolioData.experience.map((exp, idx) => (
-                        <div key={idx} className="relative pl-8 md:pl-0">
+                        <AnimateOnScroll
+                            key={idx}
+                            animation={idx % 2 === 0 ? 'slide-left' : 'slide-right'}
+                            delay={100}
+                            className="relative pl-8 md:pl-0"
+                        >
                             {/* Timeline Line */}
                             <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-px bg-border-subtle -translate-x-1/2" />
 
@@ -44,7 +50,7 @@ const Experience = () => {
 
                                 <div className="md:w-[45%]" />
                             </div>
-                        </div>
+                        </AnimateOnScroll>
                     ))}
                 </div>
             </div>
