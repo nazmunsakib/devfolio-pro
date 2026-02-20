@@ -35,27 +35,6 @@ export default function Home() {
               </p>
             </div>
 
-            {/* Nav Links */}
-            <nav aria-label="Footer navigation">
-              <ul className="flex flex-wrap justify-center gap-x-6 gap-y-2">
-                {[
-                  { name: 'About', href: '#about' },
-                  { name: 'Services', href: '#services' },
-                  { name: 'Projects', href: '#projects' },
-                  { name: 'Contact', href: '#contact' },
-                ].map((link) => (
-                  <li key={link.name}>
-                    <a
-                      href={link.href}
-                      className="text-text-secondary text-sm hover:text-primary transition-colors"
-                    >
-                      {link.name}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </nav>
-
             {/* Social icons row */}
             <div className="flex items-center gap-4">
               <a href={portfolioData.socials.github} target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile" className="text-text-secondary hover:text-primary transition-colors">
@@ -81,11 +60,11 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="mt-8 pt-6 border-t border-border-subtle/50 flex flex-col sm:flex-row justify-between items-center gap-2">
+          <div className="mt-2 pt-6 border-t border-border-subtle/50 text-center">
             <p className="text-text-secondary text-sm">
               © {new Date().getFullYear()} Nazmun Sakib. All rights reserved.
             </p>
-            <p className="text-text-secondary/50 text-xs uppercase tracking-[0.2em]">
+            <p className="text-text-secondary/50 mt-2 text-xs uppercase tracking-[0.2em]">
               Delivering Premium Digital Solutions Worldwide
             </p>
           </div>
