@@ -170,6 +170,7 @@ export const portfolioData = {
         linkedin: "https://www.linkedin.com/in/nazmunsakib/",
         instagram: "https://www.instagram.com/sakib_aura/",
         twitter: "https://x.com/nazmunsakib81",
-        wordpress: "https://profiles.wordpress.org/nazmunsakib/"
+        wordpress: "https://profiles.wordpress.org/nazmunsakib/",
+        resumeUrl: "/nazmun-sakib-resume.pdf"
     }
 };

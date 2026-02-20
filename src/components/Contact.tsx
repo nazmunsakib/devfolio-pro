@@ -80,7 +80,16 @@ const Contact = () => {
                                     </svg>
                                 </a>
                             </div>
-                            <Button size="lg" className="w-full md:w-auto">Download Resume</Button>
+                            <Button
+                                href={portfolioData.socials.resumeUrl}
+                                size="lg"
+                                className="w-full md:w-auto"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                download
+                            >
+                                Download Resume
+                            </Button>
                         </AnimateOnScroll>
                     </div>
                 </div>

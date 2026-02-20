@@ -55,13 +55,26 @@ const Hero = () => {
 
                         <AnimateOnScroll animation="fade-up" delay={400}>
                             <div className="flex flex-wrap justify-center lg:justify-start gap-4 sm:gap-5">
-                                <Button size="lg" variant="primary" className="group px-6 sm:px-8">
+                                <Button
+                                    href="#contact"
+                                    size="lg"
+                                    variant="primary"
+                                    className="group px-6 sm:px-8"
+                                >
                                     <span>Let&apos;s Work Together</span>
                                     <svg className="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                                     </svg>
                                 </Button>
-                                <Button size="lg" variant="outline" className="group px-6 sm:px-8">
+                                <Button
+                                    href={portfolioData.socials.resumeUrl}
+                                    size="lg"
+                                    variant="outline"
+                                    className="group px-6 sm:px-8"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    download
+                                >
                                     <span>Download CV</span>
                                     <svg className="w-4 h-4 ml-2 transform group-hover:translate-y-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
