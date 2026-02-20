@@ -1,3 +1,4 @@
+'use client';
 import React from 'react';
 import { portfolioData } from '@/data/portfolio';
 import AnimateOnScroll from './AnimateOnScroll';

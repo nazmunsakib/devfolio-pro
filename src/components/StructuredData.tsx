@@ -2,18 +2,24 @@ import React from 'react';
 import { portfolioData } from '@/data/portfolio';
 
 const StructuredData = () => {
+    const baseUrl = portfolioData.socials.website;
+
     const personSchema = {
         "@context": "https://schema.org",
         "@type": "Person",
+        "@id": `${baseUrl}/#person`,
         "name": portfolioData.name,
-        "url": portfolioData.socials.website,
+        "url": baseUrl,
+        "image": `${baseUrl}/images/nazmunsakib.jpg`,
         "jobTitle": portfolioData.title,
         "description": portfolioData.summary,
+        "email": `mailto:${portfolioData.socials.email}`,
+        "telephone": "+8801792637781",
         "address": {
             "@type": "PostalAddress",
             "addressLocality": "Cumilla",
             "addressRegion": "Chittagong",
-            "addressCountry": "Bangladesh"
+            "addressCountry": "BD"
         },
         "sameAs": [
             portfolioData.socials.linkedin,
@@ -23,39 +29,87 @@ const StructuredData = () => {
             portfolioData.socials.instagram
         ],
         "knowsAbout": [
-            "WordPress Development",
+            "WordPress Plugin Development",
             "Software Architecture",
             "AI Automation",
             "Laravel",
             "WooCommerce",
             "Technical SEO",
             "React",
-            "MySQL"
-        ]
+            "MySQL",
+            "PHP"
+        ],
+        "hasOccupation": {
+            "@type": "Occupation",
+            "name": "WordPress Plugin Developer",
+            "occupationLocation": {
+                "@type": "Country",
+                "name": "Bangladesh"
+            },
+            "description": "Building custom WordPress plugins, WooCommerce systems, and AI automation solutions for global clients."
+        }
     };
 
-    const serviceSchemas = {
+    const websiteSchema = {
         "@context": "https://schema.org",
-        "@type": "ItemList",
-        "itemListElement": portfolioData.services.map((service, index) => ({
-            "@type": "ListItem",
-            "position": index + 1,
-            "item": {
-                "@type": "Service",
-                "name": service.title,
-                "description": service.description,
-                "provider": {
-                    "@type": "Person",
-                    "name": portfolioData.name
-                },
-                "areaServed": "Worldwide"
-            }
-        }))
+        "@type": "WebSite",
+        "@id": `${baseUrl}/#website`,
+        "url": baseUrl,
+        "name": "Nazmun Sakib Portfolio",
+        "description": "Senior WordPress Plugin Developer & Software Architect portfolio",
+        "author": { "@id": `${baseUrl}/#person` }
     };
 
-    const projectSchemas = {
+    const professionalServiceSchema = {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "@id": `${baseUrl}/#service`,
+        "name": portfolioData.name,
+        "image": `${baseUrl}/og-image.jpg`,
+        "url": baseUrl,
+        "telephone": "+8801792637781",
+        "email": portfolioData.socials.email,
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Cumilla",
+            "addressRegion": "Chittagong",
+            "addressCountry": "BD"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 23.4607,
+            "longitude": 91.1809
+        },
+        "areaServed": "Worldwide",
+        "priceRange": "$$",
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+                "Monday", "Tuesday", "Wednesday",
+                "Thursday", "Friday", "Saturday", "Sunday"
+            ],
+            "opens": "00:00",
+            "closes": "23:59"
+        },
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Development Services",
+            "itemListElement": portfolioData.services.map((service, index) => ({
+                "@type": "Offer",
+                "position": index + 1,
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": service.title,
+                    "description": service.description
+                }
+            }))
+        }
+    };
+
+    const projectListSchema = {
         "@context": "https://schema.org",
         "@type": "ItemList",
+        "name": "Portfolio Projects",
         "itemListElement": portfolioData.projects.map((project, index) => ({
             "@type": "ListItem",
             "position": index + 1,
@@ -63,69 +117,43 @@ const StructuredData = () => {
                 "@type": "CreativeWork",
                 "name": project.name,
                 "description": project.description,
-                "url": portfolioData.socials.website,
-                "author": {
-                    "@type": "Person",
-                    "name": portfolioData.name
-                },
+                "url": project.link,
+                "author": { "@id": `${baseUrl}/#person` },
                 "keywords": project.tech.join(", ")
             }
         }))
     };
 
-    const professionalServiceSchema = {
+    const breadcrumbSchema = {
         "@context": "https://schema.org",
-        "@type": "ProfessionalService",
-        "name": portfolioData.name,
-        "image": `${portfolioData.socials.website}/og-image.jpg`,
-        "url": portfolioData.socials.website,
-        "telephone": "+8801792637781",
-        "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Cumilla",
-            "addressRegion": "Chittagong",
-            "addressCountry": "Bangladesh"
-        },
-        "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": 23.4607,
-            "longitude": 91.1809
-        },
-        "priceRange": "$$",
-        "openingHoursSpecification": {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": [
-                "Monday",
-                "Tuesday",
-                "Wednesday",
-                "Thursday",
-                "Friday",
-                "Saturday",
-                "Sunday"
-            ],
-            "opens": "00:00",
-            "closes": "23:59"
-        }
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": baseUrl
+            }
+        ]
     };
+
+    const schemas = [
+        personSchema,
+        websiteSchema,
+        professionalServiceSchema,
+        projectListSchema,
+        breadcrumbSchema
+    ];
 
     return (
         <>
-            <script
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
-            />
-            <script
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchemas) }}
-            />
-            <script
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{ __html: JSON.stringify(projectSchemas) }}
-            />
-            <script
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{ __html: JSON.stringify(professionalServiceSchema) }}
-            />
+            {schemas.map((schema, i) => (
+                <script
+                    key={i}
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+                />
+            ))}
         </>
     );
 };
