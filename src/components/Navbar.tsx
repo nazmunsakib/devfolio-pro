@@ -5,13 +5,38 @@ import Link from 'next/link';
 
 const Navbar = () => {
     const [scrolled, setScrolled] = useState(false);
+    const [activeSection, setActiveSection] = useState("");
 
     useEffect(() => {
         const handleScroll = () => {
             setScrolled(window.scrollY > 20);
         };
+
+        // Intersection Observer for scroll-spy
+        const observerOptions = {
+            root: null,
+            rootMargin: '-20% 0px -70% 0px',
+            threshold: 0
+        };
+
+        const observerCallback = (entries: IntersectionObserverEntry[]) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    setActiveSection(entry.target.id);
+                }
+            });
+        };
+
+        const observer = new IntersectionObserver(observerCallback, observerOptions);
+        const sections = document.querySelectorAll('section[id]');
+        sections.forEach((section) => observer.observe(section));
+
         window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+            sections.forEach((section) => observer.unobserve(section));
+        };
     }, []);
 
     const navLinks = [
@@ -32,21 +57,27 @@ const Navbar = () => {
                 </Link>
 
                 <div className="hidden md:flex items-center space-x-8">
-                    {navLinks.map((link) => (
-                        <Link
-                            key={link.name}
-                            href={link.href}
-                            className="text-sm font-medium text-text-secondary hover:text-primary transition-colors"
-                        >
-                            {link.name}
-                        </Link>
-                    ))}
-                    <a
+                    {navLinks.map((link) => {
+                        const isActive = activeSection === link.href.substring(1);
+                        return (
+                            <Link
+                                key={link.name}
+                                href={link.href}
+                                className={`text-sm font-medium transition-all duration-300 relative group ${isActive ? 'text-primary' : 'text-text-secondary hover:text-white'
+                                    }`}
+                            >
+                                {link.name}
+                                {/* Active Indicator Dot */}
+                                <span className={`absolute -bottom-1 left-1/2 -translate-x-1/2 w-1 h-1 rounded-full bg-primary transition-all duration-300 ${isActive ? 'opacity-100' : 'opacity-0 scale-0'}`} />
+                            </Link>
+                        );
+                    })}
+                    <Link
                         href="#contact"
-                        className="px-5 py-2 rounded-lg border border-primary text-primary text-sm font-medium hover:bg-primary/10 transition-all"
+                        className="px-5 py-2 rounded-lg border border-primary text-primary text-sm font-medium hover:bg-primary hover:text-black transition-all duration-300"
                     >
                         Hire Me
-                    </a>
+                    </Link>
                 </div>
 
                 {/* Mobile menu button could go here */}
