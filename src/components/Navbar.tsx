@@ -65,7 +65,7 @@ const Navbar = () => {
             <nav
                 role="navigation"
                 aria-label="Main navigation"
-                className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${scrolled ? 'bg-[#0b0f14]/90 backdrop-blur-lg border-b border-border-subtle py-4' : 'bg-transparent py-6'}`}
+                className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${scrolled ? 'bg-[#0b0f14]/90 backdrop-blur border-b border-[#2e355a] py-4' : 'bg-transparent py-6'}`}
             >
                 <div className="container mx-auto px-6 flex justify-between items-center">
                     <Link href="/" aria-label="Nazmun Sakib - Home" className="text-2xl font-heading font-bold tracking-tighter hover:text-primary transition-colors">
