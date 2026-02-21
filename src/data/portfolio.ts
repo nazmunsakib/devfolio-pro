@@ -7,11 +7,12 @@ export const portfolioData = {
         highlights: [
             "Custom WordPress Plugin Development",
             "WooCommerce Backend Engineering",
+            "Website Design & Maintenance",
             "Laravel Web Applications",
             "AI Automation & Workflow Systems",
             "RESTful API Development",
             "Technical SEO & Performance Optimization",
-            "POS, Booking & ERP Solutions"
+            "POS, Booking & ERP Solutions",
         ]
     },
     services: [
@@ -26,8 +27,8 @@ export const portfolioData = {
             icon: "woocommerce"
         },
         {
-            title: "Laravel Web Applications",
-            description: "Secure and scalable Laravel systems designed for SaaS platforms and complex business logic.",
+            title: "Website Design & Development",
+            description: "Secure and scalable Website designed and SaaS platforms and complex business logic.",
             icon: "laravel"
         },
         {
@@ -69,7 +70,7 @@ export const portfolioData = {
             category: "Frontend",
             items: [
                 { name: "React / Next.js", icon: "react" },
-                { name: "TypeScript", icon: "typescript" },
+                { name: "HTML5 / CSS3", icon: "typescript" },
                 { name: "Tailwind CSS", icon: "tailwind" },
                 { name: "JavaScript (ES6+)", icon: "javascript" }
             ]
