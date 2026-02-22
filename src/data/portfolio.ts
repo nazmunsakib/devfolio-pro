@@ -127,7 +127,12 @@ export const portfolioData = {
             image: "/images/projects/docy-theme.png",
             link: "https://wordpress-theme.spider-themes.net/docy/",
             featured: false,
-            nofollow: true
+            nofollow: true,
+            metrics: [
+                { icon: "TrendingUp", label: "Sales", value: "2,500+ copies" },
+                { icon: "Star", label: "Rating", value: "4.8/5.0" },
+                { icon: "Zap", label: "Performance", value: "95+ PageSpeed" }
+            ]
         },
         {
             id: 2,
@@ -138,7 +143,12 @@ export const portfolioData = {
             image: "/images/projects/francescasplace.png",
             link: "https://www.francescasplace.co.uk/",
             featured: false,
-            nofollow: true
+            nofollow: true,
+            metrics: [
+                { icon: "Clock", label: "Time Saved", value: "60% faster" },
+                { icon: "Users", label: "Bookings", value: "500+/month" },
+                { icon: "CheckCircle", label: "Accuracy", value: "99.8%" }
+            ]
         },
         {
             id: 3,
@@ -149,7 +159,12 @@ export const portfolioData = {
             image: "/images/projects/buyorsell24.png",
             link: "https://buyorsell24.com/",
             featured: false,
-            nofollow: true
+            nofollow: true,
+            metrics: [
+                { icon: "Users", label: "Active Users", value: "10K+" },
+                { icon: "Zap", label: "Load Time", value: "<1.2s" },
+                { icon: "MessageSquare", label: "Messages", value: "50K+/month" }
+            ]
         },
         {
             id: 4,
@@ -160,7 +175,12 @@ export const portfolioData = {
             image: "/images/projects/nivosearch.png",
             link: "https://wordpress.org/plugins/nivo-ajax-search-for-woocommerce/",
             featured: false,
-            nofollow: false
+            nofollow: false,
+            metrics: [
+                { icon: "Download", label: "Downloads", value: "5,000+" },
+                { icon: "Zap", label: "Search Speed", value: "<100ms" },
+                { icon: "TrendingUp", label: "Conversion", value: "+35%" }
+            ]
         }
     ],
     socials: {

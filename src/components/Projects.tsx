@@ -3,7 +3,7 @@ import React from 'react';
 import { portfolioData } from '@/data/portfolio';
 import Button from './ui/Button';
 import Image from 'next/image';
-import { Star, ArrowUpRight, Lock } from 'lucide-react';
+import { Star, ArrowUpRight, Lock, TrendingUp, Zap, Clock, Users, CheckCircle, MessageSquare, Download } from 'lucide-react';
 import AnimateOnScroll from './AnimateOnScroll';
 
 const Projects = () => {
@@ -66,6 +66,24 @@ const Projects = () => {
                                     <p className="text-text-secondary text-base leading-relaxed mb-4 line-clamp-2 md:line-clamp-none">
                                         {project.description}
                                     </p>
+
+                                    {/* Metrics */}
+                                    {(project as any).metrics && (
+                                        <div className="grid grid-cols-3 gap-3 mb-5 p-4 bg-surface/50 rounded-xl border border-primary/10">
+                                            {(project as any).metrics.map((metric: any, idx: number) => {
+                                                const IconComponent = {
+                                                    TrendingUp, Star, Zap, Clock, Users, CheckCircle, MessageSquare, Download
+                                                }[metric.icon] || TrendingUp;
+                                                return (
+                                                    <div key={idx} className="text-center">
+                                                        <IconComponent className="w-4 h-4 text-primary mx-auto mb-1" />
+                                                        <div className="text-xs font-bold text-white">{metric.value}</div>
+                                                        <div className="text-[10px] text-text-secondary uppercase tracking-wider">{metric.label}</div>
+                                                    </div>
+                                                );
+                                            })}
+                                        </div>
+                                    )}
 
                                     <a href={project.link} target="_blank" rel={`noopener noreferrer ${(project as any).nofollow ? 'nofollow' : ''}`.trim()} className="mb-5 group/link inline-block">
                                         <div className="inline-flex items-center text-sm font-bold uppercase tracking-[0.2em] text-white group-hover/link:text-primary transition-colors duration-300">
