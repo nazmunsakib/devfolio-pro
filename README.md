@@ -15,6 +15,7 @@
 
 - ✅ **100% Easy to Use**: Change all content in ONE file—no React knowledge needed
 - 🌑 **Premium Dark Design**: Modern, professional aesthetic that stands out
+- ✨ **Unique Signature Elements**: Morphing gradient blobs & custom cursor effect
 - 🚀 **Lightning Fast**: Built with Next.js 15 for top performance and SEO
 - 📱 **Mobile-First Responsive**: Perfect on phones, tablets, and desktops
 - 🔍 **SEO & GEO Optimized**: Pre-configured for Google search visibility

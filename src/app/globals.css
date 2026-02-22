@@ -23,6 +23,12 @@ html {
     color: var(--foreground);
     @apply antialiased selection:bg-primary/30 selection:text-primary;
   }
+    /* Custom cursor on desktop */
+  @media (min-width: 1024px) {
+    * {
+      cursor: none !important;
+    }
+  }
 }
 
 @layer utilities {
