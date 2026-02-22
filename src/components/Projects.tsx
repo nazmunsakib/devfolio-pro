@@ -71,9 +71,10 @@ const Projects = () => {
                                     {(project as any).metrics && (
                                         <div className="grid grid-cols-3 gap-3 mb-5 p-4 bg-surface/50 rounded-xl border border-primary/10">
                                             {(project as any).metrics.map((metric: any, idx: number) => {
-                                                const IconComponent = {
+                                                const iconMap: Record<string, any> = {
                                                     TrendingUp, Star, Zap, Clock, Users, CheckCircle, MessageSquare, Download
-                                                }[metric.icon] || TrendingUp;
+                                                };
+                                                const IconComponent = iconMap[metric.icon] || TrendingUp;
                                                 return (
                                                     <div key={idx} className="text-center">
                                                         <IconComponent className="w-4 h-4 text-primary mx-auto mb-1" />
