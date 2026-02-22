@@ -3,7 +3,7 @@ export const portfolioData = {
     title: "Sr. WordPress Developer | Software Architect",
     summary: "I build high-performance WordPress plugins, scalable WooCommerce systems, and intelligent AI automation solutions that help businesses grow faster. With strong expertise in PHP, Laravel, React, and system architecture, I deliver secure, SEO-optimized, and conversion-focused web applications for global clients.",
     about: {
-        text: "I am Nazmun Sakib, a professional full-stack software developer and WordPress plugin specialist with 5+ years of experience building scalable web applications and automation systems for international clients. My expertise covers custom WordPress plugin development, advanced WooCommerce backend engineering, Laravel applications, and AI-powered business automation. I focus on clean architecture, high performance, and technical SEO to ensure every product is fast, secure, and built for long-term scalability.",
+        text: "I am Nazmun Sakib, a professional full-stack software developer and WordPress plugin specialist with 8+ years of experience building scalable web applications and automation systems for international clients. My expertise covers custom WordPress plugin development, advanced WooCommerce backend engineering, Laravel applications, and AI-powered business automation. I focus on clean architecture, high performance, and technical SEO to ensure every product is fast, secure, and built for long-term scalability.",
         highlights: [
             "Custom WordPress Plugin Development",
             "WooCommerce Backend Engineering",
