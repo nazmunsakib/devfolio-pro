@@ -161,9 +161,9 @@ export const portfolioData = {
             featured: false,
             nofollow: true,
             metrics: [
-                { icon: "Users", label: "Active Users", value: "10K+" },
-                { icon: "Zap", label: "Load Time", value: "<1.2s" },
-                { icon: "MessageSquare", label: "Messages", value: "50K+/month" }
+                { icon: "Users", label: "Active Users", value: "" },
+                { icon: "Zap", label: "Load Time", value: "" },
+                { icon: "MessageSquare", label: "Messages", value: "" }
             ]
         },
         {
@@ -177,9 +177,9 @@ export const portfolioData = {
             featured: false,
             nofollow: false,
             metrics: [
-                { icon: "Download", label: "Downloads", value: "5,000+" },
-                { icon: "Zap", label: "Search Speed", value: "<100ms" },
-                { icon: "TrendingUp", label: "Conversion", value: "+35%" }
+                { icon: "Download", label: "Downloads", value: "" },
+                { icon: "Zap", label: "Search Speed", value: "" },
+                { icon: "TrendingUp", label: "Conversion", value: "" }
             ]
         }
     ],
