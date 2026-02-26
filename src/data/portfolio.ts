@@ -32,7 +32,7 @@ export const portfolioData = {
             icon: "laravel"
         },
         {
-            title: "Web Engineerure",
+            title: "Web Engineering",
             description: "Efficient database design, system planning, and scalable backend architecture for long-term growth.",
             icon: "layout"
         },
@@ -89,7 +89,7 @@ export const portfolioData = {
         {
             role: "Full-stack Developer (Team Lead)",
             company: "Dynamic Web Lab",
-            range: "2022 - Present",
+            range: "Dec 2021 - Apr 2022",
             achievements: [
                 "Led a team of developers in building premium WordPress themes for international clients.",
                 "Implemented high-performance solutions using Headless WordPress and Laravel.",
@@ -109,7 +109,7 @@ export const portfolioData = {
         {
             role: "Sr. Software Developer",
             company: "Serenity IT",
-            range: "2018 — Jun, 2022",
+            range: "pr 2018 - March 2021",
             achievements: [
                 "Developed custom web applications.",
                 "WordPress Plugin Development.",
