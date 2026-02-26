@@ -1,9 +1,9 @@
 export const portfolioData = {
     name: "Nazmun Sakib",
-    title: "Sr. WordPress Developer | Software Architect",
+    title: "Sr. WordPress Developer | Web Engineer",
     summary: "I build high-performance WordPress plugins, scalable WooCommerce systems, and intelligent AI automation solutions that help businesses grow faster. With strong expertise in PHP, Laravel, React, and system architecture, I deliver secure, SEO-optimized, and conversion-focused web applications for global clients.",
     about: {
-        text: "I am Nazmun Sakib, a professional full-stack software developer and WordPress plugin specialist with 8+ years of experience building scalable web applications and automation systems for international clients. My expertise covers custom WordPress plugin development, advanced WooCommerce backend engineering, Laravel applications, and AI-powered business automation. I focus on clean architecture, high performance, and technical SEO to ensure every product is fast, secure, and built for long-term scalability.",
+        text: "I am Nazmun Sakib, a professional full-stack Web Engineer and WordPress, WooCommerce specialist with 8+ years of experience building scalable web applications and automation systems for international clients. My expertise covers custom WordPress plugin development, advanced WooCommerce backend engineering, Laravel applications, and AI-powered business automation. I focus on clean architecture, high performance, and technical SEO to ensure every product is fast, secure, and built for long-term scalability.",
         highlights: [
             "Custom WordPress Plugin Development",
             "WooCommerce Backend Engineering",
@@ -32,7 +32,7 @@ export const portfolioData = {
             icon: "laravel"
         },
         {
-            title: "Software Architecture",
+            title: "Web Engineerure",
             description: "Efficient database design, system planning, and scalable backend architecture for long-term growth.",
             icon: "layout"
         },
@@ -49,21 +49,21 @@ export const portfolioData = {
     ],
     skills: [
         {
-            category: "eCommerce",
+            category: "Wordpress",
             items: [
-                { name: "WooCommerce", icon: "woocommerce" },
-                { name: "Subscription Systems", icon: "repeat" },
-                { name: "POS Systems", icon: "monitor" },
-                { name: "Booking Systems", icon: "calendar" }
+                { name: "Complex Plugin", icon: "wordpress" },
+                { name: "Custom Theme", icon: "wordpress" },
+                { name: "Gutenberg Block", icon: "wordpress" },
+                { name: "Custom Website", icon: "wordpress" }
             ]
         },
         {
-            category: "Backend",
+            category: "eCommerce",
             items: [
-                { name: "WordPress Core", icon: "wordpress" },
-                { name: "PHP", icon: "php" },
-                { name: "MySQL", icon: "mysql" },
-                { name: "Laravel", icon: "laravel" }
+                { name: "WooCommerce", icon: "woocommerce" },
+                { name: "B2B solution", icon: "repeat" },
+                { name: "POS Systems", icon: "monitor" },
+                { name: "Booking Systems", icon: "calendar" }
             ]
         },
         {
@@ -76,14 +76,14 @@ export const portfolioData = {
             ]
         },
         {
-            category: "Automation",
+            category: "Backend",
             items: [
-                { name: "AI Automation", icon: "bot" },
-                { name: "Workflow Automation", icon: "workflow" },
-                { name: "Webhooks", icon: "webhook" },
+                { name: "PHP", icon: "php" },
+                { name: "MySQL", icon: "mysql" },
+                { name: "Laravel", icon: "laravel" },
                 { name: "API Integration", icon: "api" }
             ]
-        }
+        },
     ],
     experience: [
         {

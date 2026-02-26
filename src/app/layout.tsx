@@ -22,11 +22,11 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   title: {
-    default: "Nazmun Sakib | WordPress Plugin Developer & Software Architect",
+    default: "Nazmun Sakib | WordPress Plugin Developer & Web Engineer",
     template: "%s | Nazmun Sakib",
   },
   description:
-    "Senior WordPress Plugin Developer & AI Automation Expert based in Bangladesh. 8+ years building custom WordPress plugins, WooCommerce backends, and scalable Laravel web applications for global clients.",
+    "Senior WordPress Developer & Web Engineer based in Bangladesh. 8+ years building custom WordPress plugins, WooCommerce backends, and scalable Laravel web applications for global clients.",
   icons: {
     icon: "/favicon.ico",
     shortcut: "/favicon.ico",
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   openGraph: {
-    title: "Nazmun Sakib | Senior WordPress Developer & Software Architect",
+    title: "Nazmun Sakib | Senior WordPress Developer & Web Engineer",
     description:
       "Building high-performance WordPress plugins, WooCommerce systems, and AI automation solutions for businesses worldwide.",
     url: "https://nazmunsakib.com",
@@ -67,7 +67,7 @@ export const metadata: Metadata = {
         url: "/preview.png",
         width: 1200,
         height: 630,
-        alt: "Nazmun Sakib - Senior WordPress Developer & Software Architect",
+        alt: "Nazmun Sakib - Senior WordPress Developer & Web Engineer",
         type: "image/png",
       },
     ],
@@ -76,7 +76,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Nazmun Sakib | WordPress Plugin Specialist & Software Architect",
+    title: "Nazmun Sakib | WordPress Plugin Specialist & Web Engineer",
     description:
       "Expert in custom WordPress plugins, WooCommerce backend engineering, Laravel systems, and AI automation.",
     images: ["/preview.png"],

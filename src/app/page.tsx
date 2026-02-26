@@ -33,7 +33,7 @@ export default function Home() {
                 SAKIB<span className="text-primary">.</span>
               </p>
               <p className="text-text-secondary text-sm mt-1">
-                WordPress Plugin Developer &amp; Software Architect
+                Full Stack Web Engineer — WordPress
               </p>
             </div>
 
