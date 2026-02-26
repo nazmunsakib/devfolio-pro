@@ -22,7 +22,7 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   title: {
-    default: "Nazmun Sakib | WordPress Plugin Developer & Web Engineer",
+    default: "Nazmun Sakib - Senior WordPress Developer | Web Engineer",
     template: "%s | Nazmun Sakib",
   },
   description:
@@ -35,6 +35,7 @@ export const metadata: Metadata = {
     "Remote WordPress Developer",
     "Freelance WooCommerce Expert",
     "Offshore Laravel Developer",
+    "Website Developer",
     "Global WordPress Plugin Developer",
     "AI automation expert",
     "custom WordPress plugin development",

@@ -30,7 +30,8 @@ const StructuredData = () => {
         ],
         "knowsAbout": [
             "WordPress Plugin Development",
-            "Software Architecture",
+            "Website Development",
+            "Website Design",
             "AI Automation",
             "Laravel",
             "WooCommerce",
@@ -41,7 +42,7 @@ const StructuredData = () => {
         ],
         "hasOccupation": {
             "@type": "Occupation",
-            "name": "WordPress Plugin Developer",
+            "name": "Sr. WordPress Developer",
             "occupationLocation": {
                 "@type": "Country",
                 "name": "Bangladesh"
@@ -56,7 +57,7 @@ const StructuredData = () => {
         "@id": `${baseUrl}/#website`,
         "url": baseUrl,
         "name": "Nazmun Sakib Portfolio",
-        "description": "Senior WordPress Plugin Developer & Software Architect portfolio",
+        "description": "Senior WordPress Developer | Web Engineer portfolio",
         "author": { "@id": `${baseUrl}/#person` }
     };
 

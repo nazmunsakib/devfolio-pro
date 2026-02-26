@@ -45,7 +45,7 @@ const Contact = () => {
                                     </div>
                                     <div>
                                         <p className="text-xs font-bold text-text-secondary uppercase tracking-widest mb-1">Chat on WhatsApp</p>
-                                        <p className="text-lg font-medium text-white group-hover:text-primary transition-colors">Start Conversation</p>
+                                        <p className="text-lg font-medium text-white group-hover:text-primary transition-colors">{portfolioData.socials.whatsapp}</p>
                                     </div>
                                 </a>
                             </div>
