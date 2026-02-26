@@ -69,7 +69,7 @@ const Projects = () => {
 
                                     {/* Metrics */}
                                     {(project as any).metrics && (
-                                        <div className="grid grid-cols-3 gap-3 mb-5 p-4 bg-surface/50 rounded-xl border border-primary/10">
+                                        <div className="grid grid-cols-3 gap-3 mb-5 p-4 bg-surface/50 rounded-xl border border-primary/10 hidden">
                                             {(project as any).metrics.map((metric: any, idx: number) => {
                                                 const iconMap: Record<string, any> = {
                                                     TrendingUp, Star, Zap, Clock, Users, CheckCircle, MessageSquare, Download

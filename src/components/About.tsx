@@ -13,7 +13,7 @@ const About = () => {
                         <div className="absolute -inset-4 bg-gradient-to-tr from-primary to-secondary opacity-20 blur-3xl rounded-full group-hover:opacity-30 transition-opacity duration-500" />
                         <div className="relative aspect-square max-w-[260px] sm:max-w-xs lg:max-w-md mx-auto overflow-hidden rounded-2xl border-2 border-border-subtle bg-surface shadow-2xl">
                             <Image
-                                src="/images/nazmunsakib.jpg"
+                                src="/images/nazmun-sakib.jpg"
                                 alt="Nazmun Sakib"
                                 fill
                                 className="object-cover grayscale opacity-80 group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
