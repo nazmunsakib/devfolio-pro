@@ -107,7 +107,7 @@ export const portfolioData = {
             ]
         },
         {
-            role: "Senior Software Developer",
+            role: "Software Developer",
             company: "Serenity IT",
             range: "pr 2018 - March 2021",
             achievements: [
