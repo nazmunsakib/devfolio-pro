@@ -33,14 +33,14 @@ export const metadata: Metadata = {
   },
   keywords: [
     "Remote WordPress Developer",
+    "Senior WordPress Developer",
     "Freelance WooCommerce Expert",
-    "Offshore Laravel Developer",
+    "Web Engineer",
     "Website Developer",
     "Global WordPress Plugin Developer",
     "AI automation expert",
     "custom WordPress plugin development",
     "WooCommerce backend engineering",
-    "Senior WordPress Developer",
     "WordPress developer Bangladesh",
     "WordPress plugin developer for hire",
     "WooCommerce developer Bangladesh",
@@ -127,7 +127,7 @@ export default function RootLayout({
       >
         <noscript>
           <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K4Z9SGQV"
-            height="0" width="0" style={{display:'none',visibility:'hidden'}}></iframe>
+            height="0" width="0" style={{ display: 'none', visibility: 'hidden' }}></iframe>
         </noscript>
         <StructuredData />
         <a href="#main-content" className="skip-to-content">

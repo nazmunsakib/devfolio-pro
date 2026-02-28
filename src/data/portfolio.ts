@@ -1,9 +1,9 @@
 export const portfolioData = {
     name: "Nazmun Sakib",
-    title: "Sr. WordPress Developer | Web Engineer",
+    title: "Senior WordPress Developer | Web Engineer",
     summary: "I build high-performance WordPress plugins, scalable WooCommerce systems, and intelligent AI automation solutions that help businesses grow faster. With strong expertise in PHP, Laravel, React, and system architecture, I deliver secure, SEO-optimized, and conversion-focused web applications for global clients.",
     about: {
-        text: "I am Nazmun Sakib, a professional full-stack Web Engineer and WordPress, WooCommerce specialist with 8+ years of experience building scalable web applications and automation systems for international clients. My expertise covers custom WordPress plugin development, advanced WooCommerce backend engineering, Laravel applications, and AI-powered business automation. I focus on clean architecture, high performance, and technical SEO to ensure every product is fast, secure, and built for long-term scalability.",
+        text: "I am Nazmun Sakib, a Senior WordPress Developer and Web Engineer with 8+ years of experience building scalable web applications and automation systems for international clients. My expertise covers custom WordPress plugin development, advanced WooCommerce backend engineering, Laravel applications, and AI-powered business automation. I focus on clean architecture, high performance, and technical SEO to ensure every product is fast, secure, and built for long-term scalability.",
         highlights: [
             "Custom WordPress Plugin Development",
             "WooCommerce Backend Engineering",
@@ -107,7 +107,7 @@ export const portfolioData = {
             ]
         },
         {
-            role: "Sr. Software Developer",
+            role: "Senior Software Developer",
             company: "Serenity IT",
             range: "pr 2018 - March 2021",
             achievements: [
