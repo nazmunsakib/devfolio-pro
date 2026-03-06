@@ -4,7 +4,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     return [
         {
             url: 'https://nazmunsakib.com',
-            lastModified: "2026-02-21",
+            lastModified: "2026-03-06",
             changeFrequency: 'monthly',
             priority: 1,
         },

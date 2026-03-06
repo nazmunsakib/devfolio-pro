@@ -26,29 +26,26 @@ export const metadata: Metadata = {
     template: "%s | Nazmun Sakib",
   },
   description:
-    "Senior WordPress Developer & Web Engineer based in Bangladesh. 8+ years building custom WordPress plugins, WooCommerce backends, and scalable Laravel web applications for global clients.",
+    "Senior WordPress Developer & Web Engineer based in Bangladesh with 8+ years of experience. I build custom WordPress plugins, WooCommerce backends, and scalable Laravel applications for clients in Bangladesh and worldwide.",
   icons: {
     icon: "/favicon.ico",
     shortcut: "/favicon.ico",
   },
   keywords: [
-    "Remote WordPress Developer",
     "Senior WordPress Developer",
-    "Freelance WooCommerce Expert",
     "Web Engineer",
-    "Website Developer",
-    "Global WordPress Plugin Developer",
-    "AI automation expert",
-    "custom WordPress plugin development",
-    "WooCommerce backend engineering",
+    "Nazmun Sakib",
     "WordPress developer Bangladesh",
-    "WordPress plugin developer for hire",
+    "Remote WordPress developer",
+    "Freelance WordPress developer for hire",
     "WooCommerce developer Bangladesh",
     "Laravel developer Bangladesh",
-    "Full stack developer Cumilla",
-    "Technical SEO Expert Bangladesh",
+    "WordPress plugin development",
+    "Full stack developer Bangladesh",
+    "Technical SEO Bangladesh",
+    "AI automation expert",
+    "WooCommerce backend engineering",
     "nazmunsakib",
-    "Nazmun Sakib",
   ],
   authors: [{ name: "Nazmun Sakib", url: "https://nazmunsakib.com" }],
   creator: "Nazmun Sakib",
@@ -58,9 +55,9 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   openGraph: {
-    title: "Nazmun Sakib | Senior WordPress Developer & Web Engineer",
+    title: "Nazmun Sakib | Senior WordPress Developer & Web Engineer Bangladesh",
     description:
-      "Building high-performance WordPress plugins, WooCommerce systems, and AI automation solutions for businesses worldwide.",
+      "Building high-performance WordPress plugins, WooCommerce systems, and AI automation solutions for businesses in Bangladesh and worldwide.",
     url: "https://nazmunsakib.com",
     siteName: "Nazmun Sakib Portfolio",
     images: [
@@ -72,7 +69,7 @@ export const metadata: Metadata = {
         type: "image/png",
       },
     ],
-    locale: "en_US",
+    locale: "en_BD",
     type: "website",
   },
   twitter: {
@@ -97,8 +94,9 @@ export const metadata: Metadata = {
   },
   category: "technology",
   other: {
+    "geo.country": "BD",
     "geo.region": "BD-C",
-    "geo.placename": "Cumilla",
+    "geo.placename": "Bangladesh",
     "geo.position": "23.4607;91.1809",
     "ICBM": "23.4607, 91.1809",
   },
@@ -110,7 +108,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="en-BD" className="scroll-smooth">
       <head>
         <script dangerouslySetInnerHTML={{
           __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':

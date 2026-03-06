@@ -10,7 +10,7 @@ const StructuredData = () => {
         "@id": `${baseUrl}/#person`,
         "name": portfolioData.name,
         "url": baseUrl,
-        "image": `${baseUrl}/images/nazmunsakib.jpg`,
+        "image": `${baseUrl}/images/nazmun-sakib.png`,
         "jobTitle": portfolioData.title,
         "description": portfolioData.summary,
         "email": `mailto:${portfolioData.socials.email}`,
@@ -28,27 +28,38 @@ const StructuredData = () => {
             portfolioData.socials.wordpress,
             portfolioData.socials.instagram
         ],
-        "knowsAbout": [
-            "WordPress Plugin Development",
-            "Website Development",
-            "Website Design",
-            "AI Automation",
-            "Laravel",
-            "WooCommerce",
-            "Technical SEO",
-            "React",
-            "MySQL",
-            "PHP"
-        ],
+        "knowsAbout": portfolioData.skills.flatMap(category => 
+            category.items.map(item => item.name)
+        ),
         "hasOccupation": {
             "@type": "Occupation",
-            "name": "Sr. WordPress Developer",
+            "name": portfolioData.title,
             "occupationLocation": {
                 "@type": "Country",
                 "name": "Bangladesh"
             },
-            "description": "Building custom WordPress plugins, WooCommerce systems, and AI automation solutions for global clients."
-        }
+            "description": portfolioData.about.text,
+            "skills": portfolioData.skills.flatMap(category => 
+                category.items.map(item => item.name)
+            ).join(", ")
+        },
+        "workLocation": {
+            "@type": "Place",
+            "address": {
+                "@type": "PostalAddress",
+                "addressCountry": "BD"
+            }
+        },
+        "areaServed": [
+            {
+                "@type": "Country",
+                "name": "Bangladesh"
+            },
+            {
+                "@type": "Place",
+                "name": "Worldwide"
+            }
+        ]
     };
 
     const websiteSchema = {
@@ -56,16 +67,17 @@ const StructuredData = () => {
         "@type": "WebSite",
         "@id": `${baseUrl}/#website`,
         "url": baseUrl,
-        "name": "Nazmun Sakib Portfolio",
-        "description": "Senior WordPress Developer | Web Engineer portfolio",
-        "author": { "@id": `${baseUrl}/#person` }
+        "name": `${portfolioData.name} - ${portfolioData.title} Portfolio`,
+        "description": portfolioData.summary,
+        "author": { "@id": `${baseUrl}/#person` },
+        "inLanguage": "en-BD"
     };
 
     const professionalServiceSchema = {
         "@context": "https://schema.org",
         "@type": "ProfessionalService",
         "@id": `${baseUrl}/#service`,
-        "name": portfolioData.name,
+        "name": `${portfolioData.name} - WordPress Development Services`,
         "image": `${baseUrl}/preview.png`,
         "url": baseUrl,
         "telephone": "+8801792637781",
@@ -81,7 +93,16 @@ const StructuredData = () => {
             "latitude": 23.4607,
             "longitude": 91.1809
         },
-        "areaServed": "Worldwide",
+        "areaServed": [
+            {
+                "@type": "Country",
+                "name": "Bangladesh"
+            },
+            {
+                "@type": "Place",
+                "name": "Worldwide"
+            }
+        ],
         "priceRange": "$$",
         "openingHoursSpecification": {
             "@type": "OpeningHoursSpecification",
@@ -101,10 +122,24 @@ const StructuredData = () => {
                 "itemOffered": {
                     "@type": "Service",
                     "name": service.title,
-                    "description": service.description
+                    "description": service.description,
+                    "provider": { "@id": `${baseUrl}/#person` }
                 }
             }))
         }
+    };
+
+    const faqSchema = {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": (portfolioData as any).faq?.map((item: any) => ({
+            "@type": "Question",
+            "name": item.question,
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": item.answer
+            }
+        })) || []
     };
 
     const projectListSchema = {
@@ -142,6 +177,7 @@ const StructuredData = () => {
         personSchema,
         websiteSchema,
         professionalServiceSchema,
+        faqSchema,
         projectListSchema,
         breadcrumbSchema
     ];

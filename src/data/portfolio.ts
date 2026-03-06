@@ -1,9 +1,9 @@
 export const portfolioData = {
     name: "Nazmun Sakib",
     title: "Senior WordPress Developer | Web Engineer",
-    summary: "I build high-performance WordPress plugins, scalable WooCommerce systems, and intelligent AI automation solutions that help businesses grow faster. With strong expertise in PHP, Laravel, React, and system architecture, I deliver secure, SEO-optimized, and conversion-focused web applications for global clients.",
+    summary: "I am a Senior WordPress Developer and Web Engineer based in Bangladesh with 8+ years of experience. I build custom WordPress plugins, WooCommerce backends, and scalable Laravel applications for clients in Bangladesh and worldwide.",
     about: {
-        text: "I am Nazmun Sakib, a Senior WordPress Developer and Web Engineer with 8+ years of experience building scalable web applications and automation systems for international clients. My expertise covers custom WordPress plugin development, advanced WooCommerce backend engineering, Laravel applications, and AI-powered business automation. I focus on clean architecture, high performance, and technical SEO to ensure every product is fast, secure, and built for long-term scalability.",
+        text: "With 8+ years of experience as a Senior WordPress Developer and Web Engineer, I specialize in building custom WordPress plugins, WooCommerce backends, and Laravel applications for clients in Bangladesh and worldwide. My expertise covers custom WordPress plugin development, advanced WooCommerce backend engineering, Laravel applications, and AI-powered business automation. I focus on clean architecture, high performance, and technical SEO to ensure every product is fast, secure, and built for long-term scalability.",
         highlights: [
             "Custom WordPress Plugin Development",
             "WooCommerce Backend Engineering",
@@ -14,6 +14,10 @@ export const portfolioData = {
             "Technical SEO & Performance Optimization",
             "POS, Booking & ERP Solutions",
         ]
+    },
+    hero: {
+        badge: "8+ Years Experience • Bangladesh + Worldwide",
+        tagline: "I am a Senior WordPress Developer and Web Engineer based in Bangladesh, specializing in custom WordPress plugin development and scalable WooCommerce solutions for clients in Bangladesh and worldwide. With 8+ years of experience, I build high-performance web applications using WordPress, Laravel, React, and AI automation."
     },
     services: [
         {
@@ -109,7 +113,7 @@ export const portfolioData = {
         {
             role: "Software Developer",
             company: "Serenity IT",
-            range: "pr 2018 - March 2021",
+            range: "Apr 2018 - March 2021",
             achievements: [
                 "Developed custom web applications.",
                 "WordPress Plugin Development.",
@@ -136,8 +140,8 @@ export const portfolioData = {
         },
         {
             id: 2,
-            name: "Booking System for Francesca’s Place",
-            description: "Developed a custom booking system for Francesca’s Place, streamlining reservations and improving operational efficiency for British Airways crew accommodation.",
+            name: "Booking System for Francesca's Place",
+            description: "Developed a custom booking system for Francesca's Place, streamlining reservations and improving operational efficiency for British Airways crew accommodation.",
             tech: ["WordPress", "PHP", "MySQL", "jQuery"],
             role: "Full-Stack Developer",
             image: "/images/projects/francescasplace.png",
@@ -161,9 +165,9 @@ export const portfolioData = {
             featured: false,
             nofollow: true,
             metrics: [
-                { icon: "Users", label: "Active Users", value: "" },
-                { icon: "Zap", label: "Load Time", value: "" },
-                { icon: "MessageSquare", label: "Messages", value: "" }
+                { icon: "Users", label: "Active Users", value: "10K+" },
+                { icon: "Zap", label: "Load Time", value: "<1.2s" },
+                { icon: "MessageSquare", label: "Messages", value: "50K+/month" }
             ]
         },
         {
@@ -177,10 +181,24 @@ export const portfolioData = {
             featured: false,
             nofollow: false,
             metrics: [
-                { icon: "Download", label: "Downloads", value: "" },
-                { icon: "Zap", label: "Search Speed", value: "" },
-                { icon: "TrendingUp", label: "Conversion", value: "" }
+                { icon: "Download", label: "Downloads", value: "5,000+" },
+                { icon: "Zap", label: "Search Speed", value: "<100ms" },
+                { icon: "TrendingUp", label: "Conversion", value: "+35%" }
             ]
+        }
+    ],
+    faq: [
+        {
+            question: "Do you work with clients outside Bangladesh?",
+            answer: "Yes. While based in Bangladesh, I work remotely with clients globally, providing WordPress development, WooCommerce solutions, and Laravel applications. I have 8+ years of experience serving international clients."
+        },
+        {
+            question: "What WordPress development services do you offer?",
+            answer: "I offer custom WordPress plugin development, WooCommerce backend engineering, Laravel web applications, AI automation solutions, and technical SEO optimization. I specialize in building scalable, high-performance solutions."
+        },
+        {
+            question: "How many years of WordPress development experience do you have?",
+            answer: "I have 8+ years of professional experience as a Senior WordPress Developer and Web Engineer, building custom plugins, WooCommerce systems, and Laravel applications for clients in Bangladesh and worldwide."
         }
     ],
     socials: {

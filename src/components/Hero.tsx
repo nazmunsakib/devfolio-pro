@@ -33,13 +33,13 @@ const Hero = () => {
 
                         <AnimateOnScroll animation="fade-up" delay={200}>
                             <p className="text-sm lg:text-lg text-text-secondary mb-8 leading-relaxed max-w-lg mx-auto lg:mx-0">
-                                {portfolioData.summary}
+                                {(portfolioData as any).hero?.tagline || portfolioData.summary}
                             </p>
                         </AnimateOnScroll>
 
                         <AnimateOnScroll animation="fade-up" delay={300}>
                             <ul className="flex flex-wrap justify-center lg:justify-start gap-4 sm:gap-6 mb-10">
-                                {['WordPress', 'WooCommerce', 'Laravel', 'Ai Automation'].map((item) => (
+                                {['WordPress', 'WooCommerce', 'Laravel', 'AI Automation'].map((item) => (
                                     <li key={item} className="flex items-center space-x-3 group cursor-default">
                                         <div className="flex-shrink-0 w-5 h-5 rounded-full bg-secondary/10 flex items-center justify-center border border-secondary/40 group-hover:bg-secondary group-hover:border-secondary transition-all duration-300 shadow-[0_0_10px_rgba(236,145,255,0.1)] group-hover:shadow-[0_0_15px_rgba(236,145,255,0.4)]">
                                             <svg className="w-3.5 h-3.5 text-secondary group-hover:text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -99,7 +99,7 @@ const Hero = () => {
                                 </svg>
                             </div>
 
-                            {/* Floating particles or accents */}
+                            {/* Floating particles */}
                             <div className="absolute top-1/4 right-1/4 w-2 h-2 bg-primary rounded-full blur-[2px] animate-pulse" />
                             <div className="absolute bottom-1/3 left-1/4 w-3 h-3 bg-secondary rounded-full blur-[3px] animate-pulse" />
                         </div>
@@ -107,7 +107,7 @@ const Hero = () => {
                 </div>
             </div>
 
-            {/* Bottom scroll indicator - centered as in image */}
+            {/* Bottom scroll indicator */}
             <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-50">
                 <div className="w-[8px] h-[8px] rounded-full bg-primary animate-bounce" />
                 <div className="w-[2px] h-8 bg-gradient-to-b from-primary to-transparent" />
