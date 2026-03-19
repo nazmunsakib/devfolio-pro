@@ -154,22 +154,22 @@ export const portfolioData = {
                 { icon: "CheckCircle", label: "Accuracy", value: "99.8%" }
             ]
         },
-        {
-            id: 3,
-            name: "BuyOrSell24 - Classifieds Web Application",
-            description: "Built BuyOrSell24, a scalable classifieds web application enabling seamless ad posting, user management, secure messaging, and advanced search functionality.",
-            tech: ["Laravel", "Next.js", "TypeScript", "Tailwind", "AI Chatbot"],
-            role: "Lead Frontend Engineer",
-            image: "/images/projects/buyorsell24.png",
-            link: "https://buyorsell24.com/",
-            featured: false,
-            nofollow: true,
-            metrics: [
-                { icon: "Users", label: "Active Users", value: "10K+" },
-                { icon: "Zap", label: "Load Time", value: "<1.2s" },
-                { icon: "MessageSquare", label: "Messages", value: "50K+/month" }
-            ]
-        },
+        // {
+        //     id: 3,
+        //     name: "BuyOrSell24 - Classifieds Web Application",
+        //     description: "Built BuyOrSell24, a scalable classifieds web application enabling seamless ad posting, user management, secure messaging, and advanced search functionality.",
+        //     tech: ["Laravel", "Next.js", "TypeScript", "Tailwind", "AI Chatbot"],
+        //     role: "Lead Frontend Engineer",
+        //     image: "/images/projects/buyorsell24.png",
+        //     link: "https://buyorsell24.com/",
+        //     featured: false,
+        //     nofollow: true,
+        //     metrics: [
+        //         { icon: "Users", label: "Active Users", value: "10K+" },
+        //         { icon: "Zap", label: "Load Time", value: "<1.2s" },
+        //         { icon: "MessageSquare", label: "Messages", value: "50K+/month" }
+        //     ]
+        // },
         {
             id: 4,
             name: "NivoSearch - WooCommerce Ajax Search Plugin",
